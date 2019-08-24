@@ -203,6 +203,10 @@ if has('python') || has('python3')
   Plug 'honza/vim-snippets'
 endif
 
+if has('go')
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+endif
+
 " edit
 Plug 'scrooloose/nerdcommenter' " powerful commenter
 Plug 'gantheory/vim-easymotion' " fast motion
