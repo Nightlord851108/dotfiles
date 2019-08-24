@@ -13,7 +13,6 @@ if [ "$1" == "all" ]; then
   bash ./deploy_useful_homebrew_apps.sh
   bash ./deploy_vim.sh
   bash ./deploy_zsh.sh
-  bash ./deploy_tmux.sh
   bash ./deploy_vifm.sh
   bash ./deploy_minimal_homebrew_cask_apps.sh
   bash ./deploy_fonts.sh
