@@ -26,6 +26,7 @@ brew_install 'git'
 brew_install 'pandoc'
 brew_install 'python'
 brew_install 'python3'
+brew_install 'go'
 brew_install 'node'
 
 brew_install 'vim'
