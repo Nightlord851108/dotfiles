@@ -19,9 +19,6 @@ $ git clone https://github.com/gantheory/dotfiles.git; cd dotfiles
 $ ./deploy.sh all
 # add /usr/local/bin/zsh to /etc/shells
 $ chsh -s /usr/local/bin/zsh
-$ tmux
-$ tmux source ~/.tmux.conf
-# install tmux plugins: prefix + I
 # If plugins of vim are not installed, please execute the following command.
 $ vim +PlugInstall +qall
 ```
@@ -29,6 +26,14 @@ $ vim +PlugInstall +qall
 #### iTerm2
 
 - Load iTerm2 settings: `Preferences...` => `General` => `Load preferences from a custom folder or URL`
+
+#### Atom
+
+- Link ~/.atom to atom config directory
+
+```shell
+$ ln -sn ~/Github/dotfiles/atom/atom.symlink ~/.atom
+```
 
 ### Vim/Zsh/Tmux only
 
