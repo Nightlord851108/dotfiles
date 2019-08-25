@@ -16,6 +16,7 @@ if [ "$1" == "all" ]; then
   bash ./deploy_vifm.sh
   bash ./deploy_minimal_homebrew_cask_apps.sh
   bash ./deploy_fonts.sh
+  bash ./link_all.sh
   zsh
 elif [ "$1" == "cask" ]; then
   bash ./deploy_homebrew_cask_apps.sh
