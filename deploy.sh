@@ -30,4 +30,8 @@ elif [ "$1" == "vifm" ]; then
   bash ./deploy_vifm.sh
 elif [ "$1" == "fonts" ]; then
   bash ./deploy_fonts.sh
+elif [ "$1" == "atom" ]; then
+  bash ./deploy_atom.sh
+elif [ "$1" == "atom_pkg" ]; then
+  bash ./deploy_atom_pkg.sh
 fi;
