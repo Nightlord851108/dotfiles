@@ -29,11 +29,20 @@ $ vim +PlugInstall +qall
 
 #### Atom
 
-- Link ~/.atom to atom config directory
+1. Deploy atom
 
-```shell
-$ ln -sn ~/Github/dotfiles/atom/atom.symlink ~/.atom
 ```
+$ ./deploy.sh atom
+```
+
+2. Check 'Security & Privacy' of you mac to allow open the installed Atom app
+
+3. Deploy atom packages
+
+```
+$ ./deploy.sh atom_pkg
+```
+
 
 ### Vim/Zsh/Tmux only
 
