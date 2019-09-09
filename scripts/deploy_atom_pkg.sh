@@ -31,7 +31,12 @@ run_cmd 'apm install go-plus'
 # Python
 run_cmd 'apm install ide-python'
 run_cmd 'apm install autocomplete-python'
+# Docker
+run_cmd 'apm install language-docker'
+# Nginx
+run_cmd 'apm install language-nginx'
 
+# Theme
 print 'Install Atom theme'
 run_cmd 'apm install atom-material-ui'
 run_cmd 'apm install atom-material-syntax'
