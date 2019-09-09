@@ -62,3 +62,7 @@
 ".python.source":
   editor:
     tabLength: 4
+".conf.source":
+  editor:
+    tabLength: 2
+    tabType: "hard"
