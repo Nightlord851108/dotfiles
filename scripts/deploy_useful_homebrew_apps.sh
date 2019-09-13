@@ -8,6 +8,7 @@ brew_install 'mas'
 brew_install 'tldr'
 brew_install 'tree'
 brew_install 'watch'
+brew_install 'wget'
 brew_install 'macvim'
 
 print 'Homebrew Tap Fonts'
