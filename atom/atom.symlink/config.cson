@@ -19,6 +19,9 @@
   "autocomplete-python":
     useKite: false
   core:
+    disabledPackages: [
+      "linter"
+    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
