@@ -49,6 +49,10 @@
 ".c.source":
   editor:
     tabLength: 4
+".conf.source":
+  editor:
+    tabLength: 2
+    tabType: "hard"
 ".cpp.source":
   editor:
     tabLength: 4
@@ -62,7 +66,3 @@
 ".python.source":
   editor:
     tabLength: 4
-".conf.source":
-  editor:
-    tabLength: 2
-    tabType: "hard"
