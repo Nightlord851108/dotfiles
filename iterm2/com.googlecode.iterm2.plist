@@ -66,7 +66,9 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 124 224 275 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 341 970 677 0 0 1680 1027 </string>
+	<string>0 350 970 677 0 0 1680 1050 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>348 188 970 677 0 0 1680 1050 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1280,7 +1282,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>0E9DBD21-D541-4897-BD50-6E52220DD342</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2050,6 +2052,8 @@
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SuppressRestartAnnouncement</key>
+	<true/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>iTerm Version</key>
