@@ -17,6 +17,7 @@ if [ "$1" == "all" ]; then
   bash ./deploy_minimal_homebrew_cask_apps.sh
   bash ./deploy_fonts.sh
   bash ./deploy_gtest.sh
+  bash ./deploy_drone_cli.sh
   bash ./link_all.sh
   zsh
 elif [ "$1" == "cask" ]; then
@@ -33,6 +34,8 @@ elif [ "$1" == "fonts" ]; then
   bash ./deploy_fonts.sh
 elif [ "$1" == "gtest" ]; then
   bash ./deploy_gtest.sh
+elif [ "$1" == "drone" ]; then
+  bash ./deploy_drone_cli.sh
 elif [ "$1" == "atom" ]; then
   bash ./deploy_atom.sh
 elif [ "$1" == "atom_pkg" ]; then
