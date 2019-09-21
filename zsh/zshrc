@@ -103,6 +103,7 @@ alias rptmp='cp ~/Github/dotfiles/vim/template/report.tex report.tex && v report
 alias sltmp='cp ~/Github/dotfiles/vim/template/slides.tex slides.tex && v slides.tex'
 alias fm='vifm . ~/Downloads'
 alias tmux='tmux -u'
+alias countryroads=cd $HOME
 # }}}
 # git {{{
 alias gs='git status'
