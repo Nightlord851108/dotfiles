@@ -69,6 +69,12 @@ function brew_install {
   _brew_install "$1" "$cmd"
 }
 
+function brew_tap {
+  print "brew tap "$1
+  cmd="brew tap $1"
+  run_cmd "$cmd"
+}
+
 function cask_install {
   print "brew cask install "$1
   cmd="brew cask install $1"
