@@ -6,6 +6,7 @@ run_cmd 'cd ..; wget https://github.com/google/googletest/archive/release-1.8.0.
 run_cmd 'unzip release-1.8.0.zip'
 
 print 'Building Gtest'
+run_cmd 'cd googletest-release-1.8.0/googletest'
 run_cmd 'mkdir build; cd build'
 run_cmd 'cmake -Dgtest_build_samples=ON -Dgtest_build_tests=ON ~/Github/dotfiles/googletest-release-1.8.0/googletest'
 run_cmd 'make'
