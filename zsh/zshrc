@@ -120,6 +120,10 @@ alias glog='git log --graph --abbrev-commit --decorate --format=format:"%C(dim w
 # ctags {{{
 alias ctags='/usr/local/bin/ctags -R --exclude=.git --exclude=log *'
 # }}}
+# Chrome dev {{{
+alias chrome-dev='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors &> /dev/null &'
+# }}}
+# }}}
 # }}}
 # completion {{{
 # Important
