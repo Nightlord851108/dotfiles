@@ -96,6 +96,7 @@ alias v='nvim'
 alias g++='g++-8'
 alias vinit="v ~/Github/dotfiles/vim/init.vim"
 alias zinit="v ~/Github/dotfiles/zsh/zshrc"
+alias ninit="v /usr/local/etc/nginx/nginx.conf"
 alias sz='source ~/.zshrc'
 alias tinit='v ~/Github/dotfiles/tmux/tmux.conf'
 alias st='tmux source ~/.tmux.conf'
@@ -104,6 +105,8 @@ alias sltmp='cp ~/Github/dotfiles/vim/template/slides.tex slides.tex && v slides
 alias fm='vifm . ~/Downloads'
 alias tmux='tmux -u'
 alias countryroads=cd $HOME
+alias python2=/usr/bin/python
+alias python=python3
 # }}}
 # git {{{
 alias gs='git status'
