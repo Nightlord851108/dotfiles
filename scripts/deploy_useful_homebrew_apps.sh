@@ -10,6 +10,7 @@ brew_install 'tree'
 brew_install 'watch'
 brew_install 'wget'
 brew_install 'macvim'
+brew_install 'nginx'
 
 print 'Homebrew Tap Fonts'
 run_cmd 'brew tap caskroom/fonts'

@@ -35,6 +35,8 @@ run_cmd 'apm install autocomplete-python'
 run_cmd 'apm install language-docker'
 # Nginx
 run_cmd 'apm install language-nginx'
+# Robot Framework
+run_cmd 'apm install language-robot-framework'
 
 # Theme
 print 'Install Atom theme'
