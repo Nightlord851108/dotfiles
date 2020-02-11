@@ -17,6 +17,10 @@
 #     -> override zsh syntax highlighting
 #
 ################################################################################
+
+# bash profiles {{{
+source ~/.bashrc
+# }}}
 # fzf {{{
 if ! [[ -f ~/.fzf.zsh ]] ; then
   if ! [[ -f ~/.fzf/install ]] ; then
@@ -83,6 +87,7 @@ export LSCOLORS='exfxcxdxGxegedabagacad'
 # export path
 export PATH=/usr/local/bin:$PATH
 export PATH=/Library/TeX/texbin:$PATH
+export PATH=$M2:$PATH
 # }}}
 # alias {{{
 # general {{{
