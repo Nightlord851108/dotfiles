@@ -18,6 +18,7 @@ run_cmd 'apm install vim-mode-plus'
 run_cmd 'apm install relative-numbers'
 
 print 'Install Atom language packages'
+run_cmd 'apm install file-icons'
 # Java
 run_cmd 'apm install ide-java'
 run_cmd 'apm install autocomplete-java'
