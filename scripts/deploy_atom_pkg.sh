@@ -16,6 +16,7 @@ run_cmd 'apm install teletype'
 run_cmd 'apm install activate-power-mode'
 run_cmd 'apm install vim-mode-plus'
 run_cmd 'apm install relative-numbers'
+run_cmd 'apm install atom-inline-blame'
 
 print 'Install Atom language packages'
 run_cmd 'apm install file-icons'
