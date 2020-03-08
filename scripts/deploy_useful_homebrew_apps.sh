@@ -11,6 +11,7 @@ brew_install 'watch'
 brew_install 'wget'
 brew_install 'macvim'
 brew_install 'nginx'
+brew_install 'yarn'
 
 print 'Homebrew Tap Fonts'
 run_cmd 'brew tap caskroom/fonts'
