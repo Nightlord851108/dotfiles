@@ -16,11 +16,14 @@
     colors:
       abaseColor: "#417c96"
       accentColor: "#fffdb0"
+  "autocomplete-java":
+    foldImports: false
   "autocomplete-python":
     useKite: false
   core:
     disabledPackages: [
       "linter"
+      "Hydrogen"
     ]
     telemetryConsent: "no"
     themes: [
@@ -28,7 +31,7 @@
       "atom-material-syntax"
     ]
   editor:
-    fontSize: 20
+    fontSize: 19
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -36,8 +39,7 @@
     softWrapHangingIndent: 2
   "exception-reporting":
     userId: "dea2cf6e-bd8a-4e28-b328-57f4c101e532"
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "relative-numbers":
     softWrapsCount: false
   "relative-numbers-plus":
