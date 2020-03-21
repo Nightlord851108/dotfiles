@@ -38,6 +38,11 @@ run_cmd 'apm install language-docker'
 run_cmd 'apm install language-nginx'
 # Robot Framework
 run_cmd 'apm install language-robot-framework'
+# LaTex
+run_cmd 'apm install latex'
+run_cmd 'apm install language-latex'
+# pdf
+run_cmd 'apm install pdf-view'
 
 # Theme
 print 'Install Atom theme'
