@@ -39,6 +39,8 @@
     softWrapHangingIndent: 2
   "exception-reporting":
     userId: "dea2cf6e-bd8a-4e28-b328-57f4c101e532"
+  "git-diff":
+    showIconsInEditorGutter: true
   "linter-ui-default": {}
   "relative-numbers":
     softWrapsCount: false
