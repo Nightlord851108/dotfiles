@@ -81,6 +81,11 @@ function cask_install {
   _brew_install "$1" "$cmd"
 }
 
+function mas_install {
+  print "mas install "$1", id= "$2
+  run_cmd "mas install "$2
+}
+
 function link_dir {
   source_dir="$1"
   target_dir="$2"
