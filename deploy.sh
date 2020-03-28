@@ -14,11 +14,10 @@ if [ "$1" == "all" ]; then
   bash ./deploy_vim.sh
   bash ./deploy_zsh.sh
   bash ./deploy_vifm.sh
-  bash ./deploy_minimal_homebrew_cask_apps.sh
   bash ./deploy_fonts.sh
   bash ./deploy_gtest.sh
   bash ./deploy_drone_cli.sh
-  bash ./deploy_pip_app.sh
+  # bash ./deploy_pip_app.sh
   bash ./link_all.sh
   zsh
 elif [ "$1" == "cask" ]; then
