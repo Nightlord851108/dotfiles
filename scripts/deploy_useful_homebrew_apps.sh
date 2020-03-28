@@ -14,5 +14,5 @@ brew_install 'nginx'
 brew_install 'yarn'
 
 print 'Homebrew Tap Fonts'
-run_cmd 'brew tap caskroom/fonts'
+run_cmd 'brew tap homebrew/cask-fonts'
 cask_install 'font-hack-nerd-font'
