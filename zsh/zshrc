@@ -89,7 +89,9 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/Library/TeX/texbin:$PATH
 export PATH=$M2:$PATH
 # }}}
-# alias {{{
+# JAVA {{{
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-14.jdk/Contents/Home
+# }}} # alias {{{
 # general {{{
 alias ...='cd ../..'
 alias ....='cd ../../../..'
