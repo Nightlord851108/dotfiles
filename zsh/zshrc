@@ -90,7 +90,7 @@ export PATH=/Library/TeX/texbin:$PATH
 export PATH=$M2:$PATH
 # }}}
 # JAVA {{{
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-14.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 # }}}
 # alias {{{
 # general {{{
