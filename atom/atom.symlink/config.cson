@@ -49,6 +49,8 @@
     softWrapsCount: false
     startAtOne: true
     trueNumberCurrentLine: false
+  "tree-view":
+    squashDirectoryNames: true
   "vim-mode-plus":
     smoothScrollOnMiniScroll: true
   welcome:
