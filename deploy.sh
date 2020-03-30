@@ -20,6 +20,7 @@ if [ "$1" == "all" ]; then
   # bash ./deploy_pip_app.sh
   bash ./link_all.sh
   bash ./deploy_app_store_apps.sh
+  bash ./deploy_homebrew_cask_apps.sh
   bash ./deploy_atom_pkg.sh
   zsh
 elif [ "$1" == "cask" ]; then
