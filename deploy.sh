@@ -22,6 +22,7 @@ if [ "$1" == "all" ]; then
   bash ./deploy_app_store_apps.sh
   bash ./deploy_homebrew_cask_apps.sh
   bash ./deploy_atom_pkg.sh
+  run_cmd "sudo chmod -R 755 /usr/local/share/zsh" # Fix 'zsh compinit: insecure directories, run compaudit for list.' error
   zsh
 elif [ "$1" == "cask" ]; then
   bash ./deploy_homebrew_cask_apps.sh
