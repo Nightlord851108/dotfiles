@@ -44,3 +44,5 @@ elif [ "$1" == "atom" ]; then
 elif [ "$1" == "atom_pkg" ]; then
   bash ./deploy_atom_pkg.sh
 fi;
+
+cd ..
