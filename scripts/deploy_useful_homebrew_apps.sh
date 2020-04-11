@@ -11,6 +11,7 @@ brew_install 'watch'
 brew_install 'wget'
 brew_install 'nginx'
 brew_install 'yarn'
+brew install 'gradle'
 
 # run_cmd 'brew tap homebrew/cask-fonts'
 # cask_install 'font-hack-nerd-font'
