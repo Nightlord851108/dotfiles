@@ -87,10 +87,16 @@ export LSCOLORS='exfxcxdxGxegedabagacad'
 # export path
 export PATH=/usr/local/bin:$PATH
 export PATH=/Library/TeX/texbin:$PATH
-export PATH=$M2:$PATH
 # }}}
 # JAVA {{{
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+# Maven {{{
+export M2_HOME=/usr/local/apache-maven-3.6.3
+export M2=$M2_HOME/bin
+export MAVEN_OPTS="-Xms256m -Xmx512m"
+
+export PATH=$M2:$PATH
+# }}}
 # }}}
 # alias {{{
 # general {{{
