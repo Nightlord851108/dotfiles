@@ -11,6 +11,7 @@ bash ./install_homebrew.sh
 
 if [ "$1" == "all" ]; then
   bash ./deploy_useful_homebrew_apps.sh
+  bash ./deploy_ruby.sh
   bash ./deploy_vim.sh
   bash ./deploy_zsh.sh
   bash ./deploy_vifm.sh
