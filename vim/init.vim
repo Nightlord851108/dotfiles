@@ -192,7 +192,6 @@ Plug 'jistr/vim-nerdtree-tabs' " all tabs share one nerdtree
 "   endfunction
 "   Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 " endif
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 " if has('nvim')
 "   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " endif
