@@ -1,11 +1,16 @@
 "*":
   "activate-power-mode":
+    autoToggle: false
     comboMode:
       enabled: false
       multiplier: false
     plugins:
       playAudio: true
       screenShake: true
+    screenShake:
+      enabled: false
+  "atom-beautify":
+    java: {}
   "atom-clock":
     showClockIcon: true
     showTooltip: true
@@ -32,7 +37,7 @@
       "atom-material-syntax"
     ]
   editor:
-    fontSize: 19
+    fontSize: 27
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -42,7 +47,11 @@
     userId: "dea2cf6e-bd8a-4e28-b328-57f4c101e532"
   "git-diff":
     showIconsInEditorGutter: true
-  "linter-ui-default": {}
+  latex:
+    engine: "xelatex"
+  "linter-ui-default":
+    showPanel: true
+  pigments: {}
   "relative-numbers":
     softWrapsCount: false
   "relative-numbers-plus":
@@ -50,6 +59,17 @@
     softWrapsCount: false
     startAtOne: true
     trueNumberCurrentLine: false
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.rst"
+      "text.restructuredtext"
+      "text.tex.latex"
+    ]
   "tree-view":
     squashDirectoryNames: true
   "vim-mode-plus":
@@ -66,6 +86,9 @@
 ".cpp.source":
   editor:
     tabLength: 4
+".css.source":
+  editor:
+    tabLength: 4
 ".go.source":
   editor:
     tabLength: 4
@@ -74,5 +97,11 @@
   editor:
     tabLength: 4
 ".python.source":
+  editor:
+    tabLength: 4
+".robot.source":
+  editor:
+    tabLength: 4
+".robot.text":
   editor:
     tabLength: 4
