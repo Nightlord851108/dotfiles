@@ -15,7 +15,7 @@ macOS Mojave
 ```shell
 $ xcode-select --install
 $ mkdir Github; cd Github
-$ git clone https://github.com/Nightlord851108/dotfiles.git; cd dotfiles
+$ git clone git@github.com:Nightlord851108/dotfiles.git; cd dotfiles
 $ ./deploy.sh all
 # add /usr/local/bin/zsh to /etc/shells
 $ chsh -s /usr/local/bin/zsh
