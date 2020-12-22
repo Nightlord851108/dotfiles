@@ -123,6 +123,7 @@ alias tmux='tmux -u'
 alias countryroads=cd $HOME
 alias python2=/usr/bin/python
 alias python=python3
+alias rl=rlwrap
 # }}}
 # git {{{
 alias gs='git status'
