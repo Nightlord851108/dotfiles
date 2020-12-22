@@ -26,11 +26,6 @@
   "autocomplete-python":
     useKite: false
   core:
-    disabledPackages: [
-      "linter"
-      "Hydrogen"
-      "ide-java"
-    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
@@ -50,6 +45,7 @@
   latex:
     engine: "xelatex"
   "linter-ui-default":
+    panelHeight: 286
     showPanel: true
   pigments: {}
   "relative-numbers":
