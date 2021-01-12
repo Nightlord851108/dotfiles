@@ -24,6 +24,7 @@ cask_install 'iina'
 cask_install 'karabiner-elements'
 cask_install 'postman'
 cask_install 'android-studio'
+cask_install 'brooklyn'
 
 print 'mactex-no-gui too easy to fail due to connection, please retry if it fails'
 cask_install 'mactex-no-gui' # Too easy to fail, please install manually
