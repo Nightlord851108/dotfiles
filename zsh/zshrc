@@ -88,9 +88,13 @@ export LSCOLORS='exfxcxdxGxegedabagacad'
 export PATH=/usr/local/bin:$PATH
 export PATH=/Library/TeX/texbin:$PATH
 export PATH=/usr/local/opt/ruby/bin:$PATH
+
+# R lang
+export PATH=/Library/Frameworks/R.framework/Resources/:$PATH
+
 # }}}
 # JAVA {{{
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home
+export JAVA_HOME=/Users/patrick/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
 # Maven {{{
 export M2_HOME=/usr/local/apache-maven-3.6.3
 export M2=$M2_HOME/bin
@@ -109,7 +113,7 @@ alias lla='ls -a -lh'
 alias cx='chmod +x'
 alias v='nvim'
 alias vim='nvim'
-alias g++='g++-10'
+alias g++='g++-9'
 alias vinit="v ~/Github/dotfiles/vim/init.vim"
 alias zinit="v ~/Github/dotfiles/zsh/zshrc"
 alias ninit="v /usr/local/etc/nginx/nginx.conf"
@@ -124,6 +128,7 @@ alias countryroads=cd $HOME
 alias python2=/usr/bin/python
 alias python=python3
 alias rl=rlwrap
+alias pip='python -m pip'
 # }}}
 # git {{{
 alias gs='git status'
@@ -142,6 +147,9 @@ alias ctags='/usr/local/bin/ctags -R --exclude=.git --exclude=log *'
 # }}}
 # Chrome dev {{{
 alias chrome-dev='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors &> /dev/null &'
+# }}}
+# IDE {{{
+alias intellij=/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea
 # }}}
 # }}}
 # }}}
@@ -166,7 +174,7 @@ zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p
 
 # Directory
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
-export LS_COLORS='di=00;34:ln=01;35:ex=01;36'
+export LS_COLORS='di=00;99:ln=01;35:ex=01;36'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 # default: --
@@ -176,7 +184,7 @@ zstyle ':completion:*:manuals' separate-sections true
 # override zsh syntax highlighting {{{
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
 
-ZSH_HIGHLIGHT_STYLES[path]=fg=033 # original [ ,underline ]
+ZSH_HIGHLIGHT_STYLES[path]=fg=099 # original [ ,underline ]
 ZSH_HIGHLIGHT_STYLES[command]=fg=081,bold
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=075,underline
 ZSH_HIGHLIGHT_STYLES[alias]=fg=081,bold
@@ -191,3 +199,8 @@ ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=063
 # Execute commands on start {{{
 neofetch
 # }}}
+#
+export LDAP_DC=dc=ssl-drone,dc=csie,dc=ntut,dc=edu,dc=tw
+export LDAP_URL=ldap://140.124.181.94:389
+export LDAP_ADMIN_USER=admin
+export LDAP_ADMIN_PASSWORD=admin
