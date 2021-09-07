@@ -17,6 +17,8 @@
   "atom-ide-ui":
     "atom-ide-code-format":
       formatOnSave: true
+    "atom-ide-debugger":
+      showDebuggerOnBpSet: false
   "atom-material-ui":
     colors:
       abaseColor: "#417c96"
@@ -26,13 +28,21 @@
   "autocomplete-python":
     useKite: false
   core:
+    disabledPackages: [
+      "ide-python"
+      "autocomplete-python"
+      "Hydrogen"
+    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
       "atom-material-syntax"
     ]
+    titleBar: "custom"
   editor:
-    fontSize: 27
+    fontSize: 26
+    invisibles: {}
+    scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -45,8 +55,7 @@
   latex:
     engine: "xelatex"
   "linter-ui-default":
-    panelHeight: 286
-    showPanel: true
+    panelHeight: 300
   pigments: {}
   "relative-numbers":
     softWrapsCount: false
@@ -66,7 +75,10 @@
       "text.restructuredtext"
       "text.tex.latex"
     ]
+  tabs:
+    enableVcsColoring: true
   "tree-view":
+    hideVcsIgnoredFiles: false
     squashDirectoryNames: true
   "vim-mode-plus":
     smoothScrollOnMiniScroll: true
@@ -92,12 +104,12 @@
 ".java.source":
   editor:
     tabLength: 4
+".js.source":
+  editor:
+    tabLength: 4
 ".python.source":
   editor:
     tabLength: 4
 ".robot.source":
-  editor:
-    tabLength: 4
-".robot.text":
   editor:
     tabLength: 4
