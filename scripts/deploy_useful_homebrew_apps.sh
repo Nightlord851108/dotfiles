@@ -14,6 +14,8 @@ brew_install 'yarn'
 brew_install 'gradle'
 brew_install 'mit-scheme'
 brew_install 'rlwrap'
+brew_install 'ocaml'
+brew_install 'opam'
 
 # run_cmd 'brew tap homebrew/cask-fonts'
 # cask_install 'font-hack-nerd-font'
