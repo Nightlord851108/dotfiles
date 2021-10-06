@@ -1,16 +1,17 @@
 "*":
   "activate-power-mode":
-    autoToggle: false
     comboMode:
       enabled: false
       multiplier: false
+    particles: {}
     plugins:
       playAudio: true
       screenShake: true
-    screenShake:
-      enabled: false
+    screenShake: {}
   "atom-beautify":
     java: {}
+    json:
+      beautify_on_save: true
   "atom-clock":
     showClockIcon: true
     showTooltip: true
