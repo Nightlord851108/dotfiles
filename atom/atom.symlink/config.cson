@@ -41,7 +41,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontSize: 26
+    fontSize: 28
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -58,6 +58,14 @@
   "linter-ui-default":
     panelHeight: 300
   pigments: {}
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        blue: "#5aa1e2"
+      zBright:
+        brightBlue: "#5aa1ec"
+    iconColors:
+      blue: "#5aa1ec"
   "relative-numbers":
     softWrapsCount: false
   "relative-numbers-plus":
