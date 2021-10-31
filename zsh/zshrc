@@ -125,11 +125,12 @@ alias rptmp='cp ~/Github/dotfiles/vim/template/report.tex report.tex && v report
 alias sltmp='cp ~/Github/dotfiles/vim/template/slides.tex slides.tex && v slides.tex'
 alias fm='vifm . ~/Downloads'
 alias tmux='tmux -u'
-alias countryroads=cd $HOME
+alias countryroads='cd $HOME'
 alias python2=/usr/bin/python
 alias python=python3
 alias rl=rlwrap
 alias pip='python -m pip'
+alias sml='eval $(opam env)'
 # }}}
 # git {{{
 alias gs='git status'
@@ -150,7 +151,8 @@ alias ctags='/usr/local/bin/ctags -R --exclude=.git --exclude=log *'
 alias chrome-dev='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors &> /dev/null &'
 # }}}
 # IDE {{{
-alias intellij=/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea
+alias intellij='open -a IntelliJ\ IDEA.app'
+alias vscode=code
 # }}}
 # }}}
 # }}}
@@ -201,6 +203,9 @@ ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=031
 neofetch
 # }}}
 #
+# Source OCaml{{{
+sml
+# }}}
 export LDAP_DC=dc=ssl-drone,dc=csie,dc=ntut,dc=edu,dc=tw
 export LDAP_URL=ldap://140.124.181.94:389
 export LDAP_ADMIN_USER=admin
