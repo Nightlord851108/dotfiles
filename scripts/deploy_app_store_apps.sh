@@ -19,6 +19,7 @@ mas_install "MainStage 3" 634159523
 mas_install "LINE" 539883307
 mas_install "Kindle" 405399194
 mas_install "Microsoft REmote Desktop 10" 1295203466
+mas_install "nPlayer" 1451273814
 
 # Safari extend plugin
 mas_install "Grammarly for Safari" 1462114288
