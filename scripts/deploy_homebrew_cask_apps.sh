@@ -4,6 +4,8 @@ source ./utils.sh
 # print 'Homebrew Tap Cask'
 # run_cmd 'brew tap caskroom/cask'
 
+# To add new cask app, please check if it exists in https://formulae.brew.sh/cask/
+
 print 'Install Homebrew-Cask Apps'
 cask_install 'alfred'
 cask_install 'bettertouchtool'
@@ -37,6 +39,10 @@ cask_install 'gather'
 cask_install 'thunder'
 cask_install 'microsoft-teams'
 cask_install 'messenger'
+cask_install 'notion'
+cask_install 'thunder'
+cask_install 'mkvtoolnix'
+cask_install 'firefox'
 
 print 'mactex-no-gui too easy to fail due to connection, please retry if it fails'
 cask_install 'mactex-no-gui' # Too easy to fail, please install manually
