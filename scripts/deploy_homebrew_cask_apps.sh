@@ -36,8 +36,7 @@ cask_install 'webstorm'
 cask_install 'gather'
 cask_install 'thunder'
 cask_install 'microsoft-teams'
-cask_install 'parallels'
-cask_install 'parallels-toolbox'
+cask_install 'messenger'
 
 print 'mactex-no-gui too easy to fail due to connection, please retry if it fails'
 cask_install 'mactex-no-gui' # Too easy to fail, please install manually
