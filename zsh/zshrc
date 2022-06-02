@@ -21,6 +21,9 @@
 # bash profiles {{{
 # source ~/.bashrc
 # }}}
+# homebrew {{{
+eval "$(/opt/homebrew/bin/brew shellenv)"
+# }}}
 # fzf {{{
 if ! [[ -f ~/.fzf.zsh ]] ; then
   if ! [[ -f ~/.fzf/install ]] ; then
@@ -94,8 +97,9 @@ export PATH=/Library/Frameworks/R.framework/Resources/:$PATH
 
 # }}}
 # JAVA {{{
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+export JAVA_HOME=
 # Maven {{{
 export M2_HOME=/usr/local/apache-maven-3.6.3
 export M2=$M2_HOME/bin

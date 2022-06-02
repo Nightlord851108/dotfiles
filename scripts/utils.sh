@@ -100,7 +100,7 @@ function link_dir {
       mv "$target_dir" "$target_dir_old"
     fi
   fi
-  ln -s "$source_dir" "$target_dir"
+  sudo ln -s "$source_dir" "$target_dir"
 }
 
 function link_file {
@@ -117,7 +117,7 @@ function link_file {
       mv "$target_file" "$target_file_old"
     fi
   fi
-  ln -s "$source_file" "$target_file"
+  sudo ln -s "$source_file" "$target_file"
 }
 
 function copy_file {

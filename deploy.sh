@@ -7,22 +7,22 @@ if [ $# -eq 0 ]; then
   exit
 fi;
 
-bash ./install_homebrew.sh
 
 if [ "$1" == "all" ]; then
-  bash ./deploy_useful_homebrew_apps.sh
-  bash ./deploy_ruby.sh
-  bash ./deploy_vim.sh
   bash ./deploy_zsh.sh
+  bash ./install_homebrew.sh
+  bash ./deploy_useful_homebrew_apps.sh
+  bash ./deploy_vim.sh
   bash ./deploy_vifm.sh
   bash ./deploy_fonts.sh
+  bash ./deploy_ruby.sh
   bash ./deploy_gtest.sh
   bash ./deploy_drone_cli.sh
   # bash ./deploy_pip_app.sh
   bash ./link_all.sh
   bash ./deploy_app_store_apps.sh &
   bash ./deploy_homebrew_cask_apps.sh &
-  bash ./deploy_atom_pkg.sh & 
+  # bash ./deploy_atom_pkg.sh & 
   run_cmd "sudo chmod -R 755 /usr/local/share/zsh" # Fix 'zsh compinit: insecure directories, run compaudit for list.' error
   zsh
 elif [ "$1" == "cask" ]; then
