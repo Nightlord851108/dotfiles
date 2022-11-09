@@ -88,18 +88,30 @@ export LSCOLORS='exfxcxdxGxegedabagacad'
 # }}}
 # PATH {{{
 # export path
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/patrick/.fzf/bin
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+export PATH=~/.pyenv/shims:$PATH
 export PATH=/Library/TeX/texbin:$PATH
 export PATH=/usr/local/opt/ruby/bin:$PATH
 
 # R lang
 export PATH=/Library/Frameworks/R.framework/Resources/:$PATH
 
+# Go tools
+export PATH=~/go/bin:$PATH
+
+# Node
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+
+# Opam
+export PATH=~/.opam/default/bin:$PATH
+
 # }}}
 # JAVA {{{
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
-export JAVA_HOME=
+export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.3
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home
 # Maven {{{
 export M2_HOME=/usr/local/apache-maven-3.6.3
 export M2=$M2_HOME/bin
@@ -135,6 +147,7 @@ alias python=python3
 alias rl=rlwrap
 alias pip='python -m pip'
 alias sml='eval $(opam env)'
+alias restart_icloud='killall bird && killall cloudd'
 # }}}
 # git {{{
 alias gs='git status'
@@ -214,3 +227,6 @@ export LDAP_DC=dc=ssl-drone,dc=csie,dc=ntut,dc=edu,dc=tw
 export LDAP_URL=ldap://140.124.181.94:389
 export LDAP_ADMIN_USER=admin
 export LDAP_ADMIN_PASSWORD=admin
+
+export OPEN_JML_HOME=~/openjml
+export PATH=$OPEN_JML_HOME:$PATH
