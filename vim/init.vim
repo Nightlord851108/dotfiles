@@ -362,7 +362,7 @@ au FileType markdown let b:delimitMate_nesting_quotes = ['`']
 " }}}
 " indentLine {{{
 let g:indentLine_char = '⎸'
-let g:indentLine_concealcursor=0
+let g:indentLine_concealcursor=""
 " }}}
 " fzf {{{
 nnoremap <leader>t <ESC>:Files<CR>
