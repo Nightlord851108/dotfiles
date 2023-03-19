@@ -9,8 +9,8 @@ fi;
 
 
 if [ "$1" == "all" ]; then
-  bash ./deploy_zsh.sh
   bash ./install_homebrew.sh
+  bash ./deploy_zsh.sh
   bash ./deploy_useful_homebrew_apps.sh
   bash ./deploy_vim.sh
   bash ./deploy_vifm.sh
