@@ -110,8 +110,9 @@ export PATH=~/.opam/default/bin:$PATH
 # JAVA {{{
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
-export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.3
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home
+# export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.3
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-19.0.2.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
 # Maven {{{
 export M2_HOME=/usr/local/apache-maven-3.6.3
 export M2=$M2_HOME/bin
