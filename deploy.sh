@@ -45,6 +45,10 @@ elif [ "$1" == "atom" ]; then
   bash ./deploy_atom.sh
 elif [ "$1" == "atom_pkg" ]; then
   bash ./deploy_atom_pkg.sh
+elif [ "$1" == "app_store" ]; then
+  bash ./deploy_app_store_apps.sh
+elif [ "$1" == "brew_cask" ]; then
+  bash ./deploy_homebrew_cask_apps.sh
 fi;
 
 cd ..
