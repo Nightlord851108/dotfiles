@@ -22,7 +22,7 @@
 # source ~/.bashrc
 # }}}
 # homebrew {{{
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 # }}}
 # fzf {{{
 if ! [[ -f ~/.fzf.zsh ]] ; then
