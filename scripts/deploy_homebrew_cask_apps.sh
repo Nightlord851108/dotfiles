@@ -43,6 +43,7 @@ cask_install 'messenger'
 cask_install 'notion'
 cask_install 'mkvtoolnix'
 cask_install 'firefox'
+cask_install 'brooklyn --no-quarantine'
 
 print 'mactex-no-gui too easy to fail due to connection, please retry if it fails'
 cask_install 'mactex-no-gui' # Too easy to fail, please install manually
