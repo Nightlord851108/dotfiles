@@ -48,7 +48,7 @@ zplugin light mafredri/zsh-async
 zplugin light Nightlord851108/zsh-hooks
 zplugin light Nightlord851108/vim.zsh
 zplugin light Nightlord851108/gs-prompt
-zplugin light b4b4r07/enhancd
+# zplugin light b4b4r07/enhancd
 zplugin light zsh-users/zsh-completions
 zplugin light zsh-users/zsh-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
