@@ -60,6 +60,7 @@ if ! [[ -f ~/.fzf.zsh ]] ; then
 fi
 source ~/.fzf.zsh
 # }}}
+
 # zplugin {{{
 if ! [[ -f "${HOME}/.zplugin/bin/zplugin.zsh" ]]; then
   mkdir -p ~/.zplugin
@@ -118,7 +119,8 @@ export LSCOLORS='exfxcxdxGxegedabagacad'
 # export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.3
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-19.0.2.jdk/Contents/Home
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.0.1.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.0.1.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
 # Maven {{{
 export M2_HOME=/usr/local/apache-maven-3.9.3
 export M2=$M2_HOME/bin
