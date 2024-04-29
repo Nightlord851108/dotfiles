@@ -18,6 +18,32 @@
 #
 ################################################################################
 
+
+# PATH {{{
+# export path
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/patrick/.fzf/bin
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+export PATH=~/.pyenv/shims:$PATH
+export PATH=/Library/TeX/texbin:$PATH
+export PATH=/usr/local/opt/ruby/bin:$PATH
+
+# R lang
+export PATH=/Library/Frameworks/R.framework/Resources/:$PATH
+
+# Go tools
+export PATH=~/go/bin:$PATH
+
+# Node
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+
+# Opam
+export PATH=~/.opam/default/bin:$PATH
+
+# Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# }}}
+
 # bash profiles {{{
 # source ~/.bashrc
 # }}}
@@ -86,35 +112,15 @@ eval "$(pyenv init -)"
 export CLICOLOR='true'
 export LSCOLORS='exfxcxdxGxegedabagacad'
 # }}}
-# PATH {{{
-# export path
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/patrick/.fzf/bin
-export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
-export PATH=~/.pyenv/shims:$PATH
-export PATH=/Library/TeX/texbin:$PATH
-export PATH=/usr/local/opt/ruby/bin:$PATH
-
-# R lang
-export PATH=/Library/Frameworks/R.framework/Resources/:$PATH
-
-# Go tools
-export PATH=~/go/bin:$PATH
-
-# Node
-export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
-
-# Opam
-export PATH=~/.opam/default/bin:$PATH
-
-# }}}
 # JAVA {{{
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
 # export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.3
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-19.0.2.jdk/Contents/Home
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.0.1.jdk/Contents/Home
 # Maven {{{
-export M2_HOME=/usr/local/apache-maven-3.6.3
+export M2_HOME=/usr/local/apache-maven-3.9.3
 export M2=$M2_HOME/bin
 export MAVEN_OPTS="-Xms256m -Xmx512m"
 
@@ -131,8 +137,8 @@ alias lla='ls -a -lh'
 alias cx='chmod +x'
 alias v='nvim'
 alias vim='nvim'
-alias gcc='gcc-12'
-alias g++='g++-12'
+alias gcc='gcc-13'
+alias g++='g++-13'
 alias vinit="v ~/Github/dotfiles/vim/init.vim"
 alias zinit="v ~/Github/dotfiles/zsh/zshrc"
 alias ninit="v /usr/local/etc/nginx/nginx.conf"
