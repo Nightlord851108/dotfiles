@@ -5,6 +5,5 @@ SOURCE=$HOME'/Github/dotfiles'
 
 print 'Link Configs'
 
-print 'Link Atom'
-link_dir $SOURCE'/atom/atom.symlink' $HOME'/.atom'
-
+print 'Link Zed'
+link_dir $SOURCE'/zed' $HOME'/.config/zed'

@@ -180,6 +180,7 @@ alias chrome-dev='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 # IDE {{{
 alias intellij='open -a IntelliJ\ IDEA.app'
 alias vscode=code
+alias zed=zed-preview
 # }}}
 # }}}
 # }}}
