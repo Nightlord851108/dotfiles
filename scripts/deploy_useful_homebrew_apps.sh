@@ -16,7 +16,7 @@ brew_install 'mit-scheme'
 brew_install 'rlwrap'
 brew_install 'ocaml'
 brew_install 'opam'
-brew_install 'openjdk@17'
+brew_install 'openjdk@21'
 
 # run_cmd 'brew tap homebrew/cask-fonts'
 # cask_install 'font-hack-nerd-font'

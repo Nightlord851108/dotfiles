@@ -17,12 +17,11 @@ if [ "$1" == "all" ]; then
   bash ./deploy_fonts.sh
   bash ./deploy_ruby.sh
   bash ./deploy_gtest.sh
-  bash ./deploy_drone_cli.sh
-  # bash ./deploy_pip_app.sh
+  # bash ./deploy_drone_cli.sh
+  bash ./deploy_pip_app.sh
   bash ./link_all.sh
   bash ./deploy_app_store_apps.sh &
   bash ./deploy_homebrew_cask_apps.sh &
-  # bash ./deploy_atom_pkg.sh & 
   run_cmd "sudo chmod -R 755 /usr/local/share/zsh" # Fix 'zsh compinit: insecure directories, run compaudit for list.' error
   zsh
 elif [ "$1" == "cask" ]; then
@@ -41,10 +40,6 @@ elif [ "$1" == "gtest" ]; then
   bash ./deploy_gtest.sh
 elif [ "$1" == "drone" ]; then
   bash ./deploy_drone_cli.sh
-elif [ "$1" == "atom" ]; then
-  bash ./deploy_atom.sh
-elif [ "$1" == "atom_pkg" ]; then
-  bash ./deploy_atom_pkg.sh
 elif [ "$1" == "app_store" ]; then
   bash ./deploy_app_store_apps.sh
 elif [ "$1" == "brew_cask" ]; then
