@@ -30,6 +30,7 @@ mas_install "nPlayer" 1451273814
 mas_install "WeChat" 836500024
 mas_install "Infuse" 1136220934
 mas_install "Goodnotes 6" 1444383602
+mas_install "The Unarchiver" 425424353
 
 # Safari extend plugin
 mas_install "Grammarly for Safari" 1462114288
