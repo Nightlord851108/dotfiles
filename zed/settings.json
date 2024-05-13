@@ -62,6 +62,7 @@
     "terminal": {
         "default_height": 640
     },
+    "seed_search_query_from_cursor": "selection",
     "auto_install_extensions": {
         "night-owlz": true,
         "git-firefly": true,
