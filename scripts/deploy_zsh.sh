@@ -17,3 +17,5 @@ print 'Remember to source ~/.zshrc'
 
 print 'Link Zsh'
 link_file $SOURCE'/zsh/zshrc' $HOME'/.zshrc'
+
+source ~/.zshrc
