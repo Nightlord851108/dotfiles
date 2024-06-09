@@ -45,7 +45,11 @@
         }
     },
     "hour_format": "hour24",
-    "language_overrides": {},
+    "language_overrides": {
+        "JSON": {
+            "show_inline_completions": false
+        }
+    },
     "enable_preview_from_file_finder": true,
     "preferred_line_length": 80,
     "show_whitespaces": "selection",

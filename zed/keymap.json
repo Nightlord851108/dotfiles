@@ -5,5 +5,11 @@
             "cmd-shift-v": "markdown::OpenPreviewToTheSide",
             "cmd-alt-v": "markdown::OpenPreview"
         }
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            "enter": "project_panel::Rename"
+        }
     }
 ]
