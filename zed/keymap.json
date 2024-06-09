@@ -1,0 +1,9 @@
+[
+    {
+        "context": "Editor",
+        "bindings": {
+            "cmd-shift-v": "markdown::OpenPreviewToTheSide",
+            "cmd-alt-v": "markdown::OpenPreview"
+        }
+    }
+]
