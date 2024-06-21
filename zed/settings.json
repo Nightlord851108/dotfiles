@@ -90,6 +90,7 @@
         "r": true,
         "xml": true,
         "ocaml": true,
-        "toml": true
+        "toml": true,
+        "scss": true
     }
 }
