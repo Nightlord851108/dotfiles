@@ -3,7 +3,13 @@
         "context": "Editor",
         "bindings": {
             "cmd-shift-v": "markdown::OpenPreviewToTheSide",
-            "cmd-alt-v": "markdown::OpenPreview"
+            "cmd-alt-v": "markdown::OpenPreview",
+            "cmd-k k": "pane::SplitUp",
+            "cmd-k j": "pane::SplitDown",
+            "cmd-k h": "pane::SplitLeft",
+            "cmd-k l": "pane::SplitRight",
+            "cmd-alt- left": "pane::GoBack",
+            "cmd-alt- right": "pane::GoForward"
         }
     },
     {
