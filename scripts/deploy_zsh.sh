@@ -7,7 +7,7 @@ print 'Deploy Zsh'
 
 print 'Homebrew Tap universal-ctags/universal-ctags'
 run_cmd 'brew tap universal-ctags/universal-ctags'
-brew_install '--HEAD universal-ctags'
+brew_install ' universal-ctags'
 
 brew_install 'zsh'
 brew_install 'diff-so-fancy'
