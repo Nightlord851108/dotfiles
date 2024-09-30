@@ -1,4 +1,9 @@
 #! /bin/bash
+which -s brew
+if [[ $? != 0 ]] ; then
+    export PATH=$PATH:/opt/homebrew/bin
+fi
+
 function _print {
   now_str=$1
   strlen=${#now_str}
