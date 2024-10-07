@@ -47,6 +47,7 @@ cask_install 'pycharm'
 cask_install 'clion'
 cask_install 'webstorm'
 cask_install 'gather'
+cask_install 'drawio'
 
 
 print 'mactex-no-gui too easy to fail due to connection, please retry if it fails'
