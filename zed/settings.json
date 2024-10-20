@@ -8,6 +8,9 @@
 // from the command palette or from `Zed` application menu.
 {
     "languages": {
+        "JSONC": {
+            "show_inline_completions": false
+        },
         "LaTeX": {
             "show_inline_completions": false
         }
@@ -55,6 +58,25 @@
             "show_inline_completions": false
         }
     },
+    "lsp": {
+        "typos": {
+            "initialization_options": {
+                // Path to your typos config file, .typos.toml by default.
+                "config": ".typos.toml",
+                // Path to your typos-lsp executable, takes $PATH into account.
+                "path": "typos-lsp",
+                // Diagnostic severity within Zed. "Error" by default, can be:
+                // "Error", "Hint", "Information", "Warning"
+                "diagnosticSeverity": "Warning",
+                // Minimum logging level for the LSP, displayed in Zed's logs. "info" by default, can be:
+                // "debug", "error", "info", "off", "trace", "warn"
+                "logLevel": "info",
+                // Traces the communication between ZED and the language server. Recommended for debugging only. "off" by default, can be:
+                // "messages", "off", "verbose"
+                "trace.server": "off"
+            }
+        }
+    },
     "enable_preview_from_file_finder": true,
     "preferred_line_length": 80,
     "show_whitespaces": "selection",
@@ -96,6 +118,7 @@
         "xml": true,
         "ocaml": true,
         "toml": true,
-        "scss": true
+        "scss": true,
+        "typos": true
     }
 }

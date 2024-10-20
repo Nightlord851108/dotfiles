@@ -9,13 +9,66 @@
             "cmd-k h": "pane::SplitLeft",
             "cmd-k l": "pane::SplitRight",
             "cmd-alt- left": "pane::GoBack",
-            "cmd-alt- right": "pane::GoForward"
+            "cmd-alt- right": "pane::GoForward",
+            "cmd-shift-d": ["editor::SelectPrevious", { "replace_newest": true }]
+        }
+    },
+    {
+        "context": "BufferSearchBar && !in_replace > Editor",
+        "bindings": {
+            "enter": "vim::SelectNext"
         }
     },
     {
         "context": "ProjectPanel",
         "bindings": {
             "enter": "project_panel::Rename"
+        }
+    },
+    {
+        "context": "ProjectSearchBar",
+        "bindings": {
+            "escape": "project_search::ToggleFocus",
+            "cmd-shift-j": "project_search::ToggleFilters",
+            "cmd-shift-f": "search::FocusSearch",
+            "cmd-shift-r": "search::ToggleReplace",
+            "cmd-r": "search::ToggleReplace",
+            "alt-cmd-g": "search::ToggleRegex",
+            "alt-cmd-x": "search::ToggleRegex",
+            "cmd-shift-h": null
+        }
+    },
+    {
+        "context": "ProjectSearchView",
+        "bindings": {
+            "cmd-shift-h": null
+        }
+    },
+    {
+        "context": "BufferSearchBar",
+        "bindings": {
+            "cmd-r": "search::ToggleReplace",
+            "cmd-alt-f": "project_search::ToggleFilters",
+            "cmd-shift-s": "search::SelectAllMatches"
+        }
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "cmd-shift-g": "search::SelectPrevMatch",
+            "cmd-alt-s": "search::ToggleSelection",
+            "cmd-shift-s": "search::SelectAllMatches",
+            "alt-cmd-c": "search::ToggleCaseSensitive",
+            "alt-cmd-w": "search::ToggleWholeWord",
+            "alt-cmd-f": "project_search::ToggleFilters",
+            "alt-cmd-x": "search::ToggleRegex",
+            "cmd-shift-h": null
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-shift-h": null
         }
     }
 ]
