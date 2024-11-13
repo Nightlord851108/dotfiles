@@ -75,6 +75,48 @@
                 // "messages", "off", "verbose"
                 "trace.server": "off"
             }
+        },
+        "texlab": {
+            "settings": {
+                "texlab": {
+                    "build": {
+                        "onSave": true,
+                        "pdfDirectory": "build",
+                        "forwardSearchAfter": true,
+                        "executable": "latexmk",
+                        "args": [
+                            "-synctex=1",
+                            "-interaction=nonstopmode",
+                            "-file-line-error",
+                            "-pdf",
+                            "-outdir=build",
+                            "%f"
+                        ]
+                        // "executable": "tectonic",
+                        // "args": [
+                        //     "-X",
+                        //     "compile",
+                        //     "%f",
+                        //     "--untrusted",
+                        //     "--synctex",
+                        //     "--keep-logs",
+                        //     "--keep-intermediates"
+                        // ]
+                    },
+                    "forwardSearch": {
+                        "executable": "/Applications/Skim.app/Contents/SharedSupport/displayline",
+                        "args": ["-r", "%l", "%p", "%f"]
+                        // "executable": "zathura",
+                        // "args": [
+                        //     "--synctex-forward",
+                        //     "%l:1:%f",
+                        //     "-x",
+                        //     "zed %%{input}:%%{line}",
+                        //     "%p"
+                        // ]
+                    }
+                }
+            }
         }
     },
     "enable_preview_from_file_finder": true,
