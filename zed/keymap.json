@@ -1,5 +1,10 @@
 [
     {
+        "bindings": {
+            "cmd-enter": "workspace::ToggleZoom"
+        }
+    },
+    {
         "context": "Editor",
         "bindings": {
             "cmd-shift-v": "markdown::OpenPreviewToTheSide",
@@ -69,6 +74,12 @@
         "context": "Workspace",
         "bindings": {
             "cmd-shift-h": null
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-t": "workspace::NewTerminal"
         }
     }
 ]
