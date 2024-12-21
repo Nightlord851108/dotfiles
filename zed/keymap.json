@@ -77,7 +77,7 @@
         }
     },
     {
-        "context": "Workspace",
+        "context": "Terminal",
         "bindings": {
             "cmd-t": "workspace::NewTerminal"
         }
