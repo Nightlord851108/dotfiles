@@ -7,23 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-    "assistant": {
-        "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-7-sonnet-latest"
-        },
-        "version": "2"
-    },
     "languages": {
         "Markdown": {
-            "show_edit_predictions": false
+            "show_inline_completions": false
         },
         "JSONC": {
-            "show_edit_predictions": false
+            "show_inline_completions": false
         },
         "LaTeX": {
             "show_edit_predictions": false,
-            "show_edit_predictions": false
+            "show_inline_completions": false
         }
     },
     "base_keymap": "Atom",
@@ -66,7 +59,7 @@
     "hour_format": "hour24",
     "language_overrides": {
         "JSON": {
-            "show_edit_predictions": false
+            "show_inline_completions": false
         }
     },
     "lsp": {
