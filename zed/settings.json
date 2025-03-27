@@ -158,6 +158,7 @@
     "graphql": true,
     "swift": true,
     "latex": true,
+    "ltex": true,
     "csv": true,
     "rainbow-csv": true,
     "scala": true,
