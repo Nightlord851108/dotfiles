@@ -15,22 +15,22 @@
     "version": "2"
   },
   "languages": {
-    "Markdown": {
-      "show_edit_predictions": false
-    },
     "JSONC": {
-      "show_edit_predictions": false
+      "show_inline_completions": false
     },
     "LaTeX": {
-      "show_edit_predictions": false,
-      "show_edit_predictions": false
+      "show_inline_completions": false
+    },
+    "Markdown": {
+      "show_inline_completions": false
     }
   },
-  "LaTeX": {
-    "show_inline_completions": false
-  },
-  "Markdown": {
-    "show_inline_completions": false
+  "base_keymap": "Atom",
+  "theme": "Night Owl Dark",
+  "vim_mode": true,
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
   },
   "tab_size": 4,
   "ui_font_size": 24,
@@ -65,7 +65,8 @@
   "hour_format": "hour24",
   "language_overrides": {
     "JSON": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
+      "show_inline_completions": false
     }
   },
   "lsp": {
@@ -144,13 +145,6 @@
     "default_height": 640
   },
   "seed_search_query_from_cursor": "selection",
-  "base_keymap": "Atom",
-  "theme": "Night Owl Dark",
-  "vim_mode": true,
-  "telemetry": {
-    "diagnostics": true,
-    "metrics": true
-  },
   "auto_install_extensions": {
     "night-owlz": true,
     "git-firefly": true,
