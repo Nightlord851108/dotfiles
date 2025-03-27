@@ -235,6 +235,10 @@ neofetch
 # Source OCaml{{{
 sml
 # }}}
+# Game options {{{
+alias game_fps_on="/bin/launchctl setenv MTL_HUD_ENABLED 1"
+alias game_fps_off="/bin/launchctl setenv MTL_HUD_ENABLED 0"
+# }}}
 export LDAP_DC=dc=ssl-drone,dc=csie,dc=ntut,dc=edu,dc=tw
 export LDAP_URL=ldap://140.124.181.94:389
 export LDAP_ADMIN_USER=admin
