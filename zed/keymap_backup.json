@@ -1,12 +1,11 @@
 [
     {
         "bindings": {
-            "cmd-enter": "workspace::ToggleZoom",
+            "cmd-enter": "workspace::ToggleZoom"
         }
     },
     {
         "context": "Editor",
-        "use_key_equivalents": true,
         "bindings": {
             "cmd-shift-v": "markdown::OpenPreviewToTheSide",
             "cmd-alt-v": "markdown::OpenPreview",
@@ -16,11 +15,7 @@
             "cmd-k l": "pane::SplitRight",
             "cmd-alt- left": "pane::GoBack",
             "cmd-alt- right": "pane::GoForward",
-            "cmd-shift-d": ["editor::SelectPrevious", { "replace_newest": true }],
-            "cmd-alt--": "editor::FoldAll",
-            "cmd-alt-=": "editor::UnfoldAll",
-            "alt--": "editor::FoldRecursive",
-            "alt-=": "editor::UnfoldLines"
+            "cmd-shift-d": ["editor::SelectPrevious", { "replace_newest": true }]
         }
     },
     {
@@ -65,7 +60,7 @@
     {
         "context": "Pane",
         "bindings": {
-            "cmd-shift-g": "search::SelectPreviousMatch",
+            "cmd-shift-g": "search::SelectPrevMatch",
             "cmd-alt-s": "search::ToggleSelection",
             "cmd-shift-s": "search::SelectAllMatches",
             "alt-cmd-c": "search::ToggleCaseSensitive",

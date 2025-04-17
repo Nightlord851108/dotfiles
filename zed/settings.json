@@ -16,18 +16,21 @@
   },
   "languages": {
     "JSONC": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     },
     "LaTeX": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     },
     "Markdown": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     }
   },
   "base_keymap": "Atom",
   "theme": "Night Owl Dark",
   "vim_mode": true,
+  "vim": {
+      "toggle_relative_line_numbers": true
+  },
   "telemetry": {
     "diagnostics": true,
     "metrics": true
@@ -135,7 +138,7 @@
   "show_whitespaces": "selection",
   "soft_wrap": "editor_width",
   "env": {},
-  "relative_line_numbers": true,
+  // "relative_line_numbers": true,
   "project_panel": {
     "auto_fold_dirs": true,
     "default_width": 260,
