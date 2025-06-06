@@ -2,6 +2,7 @@
     {
         "bindings": {
             "cmd-enter": "workspace::ToggleZoom",
+            "cmd-shift-o": "workspace::AddFolderToProject"
         }
     },
     {
