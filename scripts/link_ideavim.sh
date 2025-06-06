@@ -3,4 +3,4 @@ source ./utils.sh
 
 SOURCE=$HOME'/Github/dotfiles'
 
-cp $SOURCE'/ideavimrc/ideavimrc' $HOME'/.ideavimrc'
+cp $SOURCE'/ideavim/ideavimrc' $HOME'/.ideavimrc'
