@@ -8,6 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "assistant": {
+    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-latest"
@@ -16,13 +17,13 @@
   },
   "languages": {
     "JSONC": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     },
     "LaTeX": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     },
     "Markdown": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     }
   },
   "base_keymap": "Atom",
