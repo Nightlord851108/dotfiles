@@ -13,7 +13,7 @@
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4-thinking"
     },
     "version": "2"
   },
@@ -37,12 +37,14 @@
   "vim": {
     "toggle_relative_line_numbers": true
   },
+  "wrap_guides": [80],
   "telemetry": {
     "diagnostics": true,
     "metrics": true
   },
   "tab_size": 4,
   "ui_font_size": 24,
+  "buffer_font_family": "LXGW WenKai Mono TC",
   "buffer_font_size": 28,
   "buffer_line_height": {
     "custom": 1.7
@@ -182,7 +184,7 @@
     "toml": true,
     "scss": true,
     "typos": true,
-    "material-dark-theme": true,
+    "material-dark": true,
     "material-icon-theme": true
   }
 }
