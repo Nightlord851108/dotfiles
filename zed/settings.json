@@ -7,6 +7,8 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "theme": "Material Dark",
+  "icon_theme": "Material Icon Theme",
   "agent": {
     "always_allow_tool_actions": true,
     "default_model": {
@@ -17,20 +19,23 @@
   },
   "languages": {
     "JSONC": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
+      "tab_size": 2
     },
     "LaTeX": {
       "show_edit_predictions": false
     },
     "Markdown": {
       "show_edit_predictions": false
+    },
+    "Rainbow CSV": {
+      "show_edit_predictions": false
     }
   },
   "base_keymap": "Atom",
-  "theme": "Night Owl Dark",
   "vim_mode": true,
   "vim": {
-      "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true
   },
   "telemetry": {
     "diagnostics": true,
@@ -136,8 +141,9 @@
   },
   "enable_preview_from_file_finder": true,
   "preferred_line_length": 80,
+  "wrap_guides": [80],
   "show_whitespaces": "selection",
-  "soft_wrap": "editor_width",
+  "soft_wrap": "bounded",
   "env": {},
   // "relative_line_numbers": true,
   "project_panel": {
@@ -175,6 +181,8 @@
     "ocaml": true,
     "toml": true,
     "scss": true,
-    "typos": true
+    "typos": true,
+    "material-dark-theme": true,
+    "material-icon-theme": true
   }
 }

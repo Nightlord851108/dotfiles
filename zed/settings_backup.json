@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "assistant": {
+  "agent": {
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
@@ -24,13 +24,16 @@
     },
     "Markdown": {
       "show_edit_predictions": false
+    },
+    "Rainbow CSV": {
+      "show_inline_completions": false
     }
   },
   "base_keymap": "Atom",
   "theme": "Night Owl Dark",
   "vim_mode": true,
   "vim": {
-      "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true
   },
   "telemetry": {
     "diagnostics": true,
