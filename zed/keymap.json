@@ -2,7 +2,10 @@
     {
         "bindings": {
             "cmd-enter": "workspace::ToggleZoom",
-            "cmd-shift-o": "workspace::AddFolderToProject"
+            "cmd-shift-o": "workspace::AddFolderToProject",
+            "ctrl-1": "project_panel::ToggleFocus",
+            "ctrl-2": "git_panel::ToggleFocus",
+            "ctrl-3": "outline_panel::ToggleFocus"
         }
     },
     {
@@ -11,17 +14,25 @@
         "bindings": {
             "cmd-shift-v": "markdown::OpenPreviewToTheSide",
             "cmd-alt-v": "markdown::OpenPreview",
-            "cmd-k k": "pane::SplitUp",
-            "cmd-k j": "pane::SplitDown",
-            "cmd-k h": "pane::SplitLeft",
-            "cmd-k l": "pane::SplitRight",
+            "cmd-k k": ["workspace::MoveItemToPaneInDirection", {"direction": "up"}],
+            "cmd-k j": ["workspace::MoveItemToPaneInDirection", {"direction": "down"}],
+            "cmd-k h": ["workspace::MoveItemToPaneInDirection", {"direction": "left"}],
+            "cmd-k l": ["workspace::MoveItemToPaneInDirection", {"direction": "right"}],
             "cmd-alt- left": "pane::GoBack",
             "cmd-alt- right": "pane::GoForward",
             "cmd-shift-d": ["editor::SelectPrevious", { "replace_newest": true }],
             "cmd-alt--": "editor::FoldAll",
             "cmd-alt-=": "editor::UnfoldAll",
             "alt--": "editor::FoldRecursive",
-            "alt-=": "editor::UnfoldLines"
+            "alt-=": "editor::UnfoldLines",
+            // coding refactoring
+            "shift-f6": "editor::Rename",
+            "f2": "editor::GoToDiagnostic",
+            "shift-f2": "editor::GoToPreviousDiagnostic",
+            "cmd-alt-left": "pane::GoBack",
+            "cmd-alt-right": "pane::GoForward",
+            "cmd-b": "editor::GoToDefinition",
+            "cmd-shift-b": "editor::GoToImplementation"
         }
     },
     {
@@ -73,13 +84,36 @@
             "alt-cmd-w": "search::ToggleWholeWord",
             "alt-cmd-f": "project_search::ToggleFilters",
             "alt-cmd-x": "search::ToggleRegex",
+            "cmd-1": ["pane::ActivateItem", 0],
+            "cmd-2": ["pane::ActivateItem", 1],
+            "cmd-3": ["pane::ActivateItem", 2],
+            "cmd-4": ["pane::ActivateItem", 3],
+            "cmd-5": ["pane::ActivateItem", 4],
+            "cmd-6": ["pane::ActivateItem", 5],
+            "cmd-7": ["pane::ActivateItem", 6],
+            "cmd-8": ["pane::ActivateItem", 7],
+            "cmd-9": ["pane::ActivateItem", 8],
+            "cmd-0": "pane::ActivateLastItem",
+            "ctrl-1": null,
+            "ctrl-2": null,
+            "ctrl-3": null,
+            "ctrl-4": null,
+            "ctrl-5": null,
+            "ctrl-6": null,
+            "ctrl-7": null,
+            "ctrl-8": null,
+            "ctrl-9": null,
+            "ctrl-0": null,
             "cmd-shift-h": null
         }
     },
     {
         "context": "Workspace",
         "bindings": {
-            "cmd-shift-h": null
+            "cmd-shift-h": null,
+            "ctrl-tab": "pane::ActivateNextItem",
+            "ctrl-shift-tab": "pane::ActivatePreviousItem",
+            "cmd-b": null
         }
     },
     {
