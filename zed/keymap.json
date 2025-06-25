@@ -25,6 +25,8 @@
             "cmd-alt-=": "editor::UnfoldAll",
             "alt--": "editor::FoldRecursive",
             "alt-=": "editor::UnfoldLines",
+            "tab": "editor::Indent",
+            "shift-tab": "editor::Outdent",
             // coding refactoring
             "shift-f6": "editor::Rename",
             "f2": "editor::GoToDiagnostic",
@@ -34,6 +36,13 @@
             "cmd-b": "editor::GoToDefinition",
             "cmd-shift-b": "editor::GoToImplementation"
         }
+    },
+    {
+      "context": "vim_mode == visual",
+      "bindings": {
+        "tab": "editor::Indent",
+        "shift-tab": "editor::Outdent"
+      }
     },
     {
         "context": "BufferSearchBar && !in_replace > Editor",
