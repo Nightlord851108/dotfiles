@@ -41,7 +41,16 @@
       "context": "vim_mode == visual",
       "bindings": {
         "tab": "editor::Indent",
-        "shift-tab": "editor::Outdent"
+        "shift-tab": "editor::Outdent",
+        "0": "vim::FirstNonWhitespace",
+        "^": "vim::StartOfLine"
+      }
+    },
+    {
+      "context": "vim_mode == normal",
+      "bindings": {
+        "0": "vim::FirstNonWhitespace",
+        "^": "vim::StartOfLine"
       }
     },
     {
