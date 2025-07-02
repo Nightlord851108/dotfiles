@@ -35,7 +35,7 @@ if has('termguicolors')
 endif
 set autoread " set to auto read when a file is changed from the outside
 set history=500 " set how many lines neovim should remember
-" set pastetoggle=<F2>  " switch paste mode
+set pastetoggle=<F2>  " switch paste mode
 
 set ignorecase " /the would find 'the' or 'The', add \C if you want 'the' only
 set smartcase " while /The would find only 'The' etc.
@@ -121,8 +121,8 @@ function! SetWrapKeyMapping()
     inoremap <buffer> <silent> <Down> <Esc>gja
     inoremap <buffer> <silent> <Home> <Esc>g<Home>i
     inoremap <buffer> <silent> <End>  <Esc>g<End>a
-    onoremap <buffer> <silent> j gj
-    onoremap <buffer> <silent> k gk
+    onoremap <buffer> <silent> j j
+    onoremap <buffer> <silent> k k
   else
     silent! nunmap <buffer> k
     silent! nunmap <buffer> j
