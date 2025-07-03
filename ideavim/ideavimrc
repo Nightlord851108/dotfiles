@@ -36,8 +36,6 @@ Plug 'tpope/vim-commentary'
 "map \b <Action>(ToggleLineBreakpoint)
 noremap 0 ^
 noremap ^ 0
-noremap  <buffer> <silent> k k
-noremap  <buffer> <silent> j j
 
 set number relativenumber
 
