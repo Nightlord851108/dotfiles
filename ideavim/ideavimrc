@@ -40,3 +40,20 @@ noremap  <buffer> <silent> k k
 noremap  <buffer> <silent> j j
 
 set number relativenumber
+
+" 進入 Insert 前先關閉 relativenumber，再執行原生插入命令
+nnoremap <silent> i :set norelativenumber<CR>i
+nnoremap <silent> I :set norelativenumber<CR>I
+nnoremap <silent> a :set norelativenumber<CR>a
+nnoremap <silent> A :set norelativenumber<CR>A
+nnoremap <silent> o :set norelativenumber<CR>o
+nnoremap <silent> O :set norelativenumber<CR>O
+" 若你常用 c/C/s/S 等操作也可同理加映射：
+nnoremap <silent> c :set norelativenumber<CR>c
+nnoremap <silent> C :set norelativenumber<CR>C
+nnoremap <silent> s :set norelativenumber<CR>s
+nnoremap <silent> S :set norelativenumber<CR>S
+
+" 在 Insert Mode 按下 <Esc> 回到 Normal 後，重新開啟 relativenumber
+inoremap <silent> <Esc> <Esc>:set relativenumber<CR>
+
