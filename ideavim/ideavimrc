@@ -55,3 +55,6 @@ nnoremap <silent> S :set norelativenumber<CR>S
 " 在 Insert Mode 按下 <Esc> 回到 Normal 後，重新開啟 relativenumber
 inoremap <silent> <Esc> <Esc>:set relativenumber<CR>
 
+" Visual 模式按 Esc 離開並重新開啟相對行號
+vnoremap <silent> <Esc> <Esc>:set relativenumber<CR>
+
