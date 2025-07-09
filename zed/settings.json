@@ -15,7 +15,6 @@
       "provider": "zed.dev",
       "model": "claude-sonnet-4-thinking"
     },
-    "version": "2"
   },
   "languages": {
     "JSONC": {
