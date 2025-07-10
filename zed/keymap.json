@@ -5,7 +5,9 @@
             "cmd-shift-o": "workspace::AddFolderToProject",
             "ctrl-1": "project_panel::ToggleFocus",
             "ctrl-2": "git_panel::ToggleFocus",
-            "ctrl-3": "outline_panel::ToggleFocus"
+            "ctrl-3": "outline_panel::ToggleFocus",
+            "cmd-alt-\\": "workspace::ToggleRightDock",
+            "ctrl-a": "agent::ToggleFocus"
         }
     },
     {
@@ -123,6 +125,12 @@
             "ctrl-9": null,
             "ctrl-0": null,
             "cmd-shift-h": null
+        }
+    },
+    {
+        "context": "NotificationPanel",
+        "bindings": {
+            "cmd-alt-\\": "agent::ToggleFocus"
         }
     },
     {
