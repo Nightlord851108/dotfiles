@@ -35,7 +35,7 @@ if has('termguicolors')
 endif
 set autoread " set to auto read when a file is changed from the outside
 set history=500 " set how many lines neovim should remember
-set pastetoggle=<F2>  " switch paste mode
+" set pastetoggle=<F2>  " switch paste mode
 
 set ignorecase " /the would find 'the' or 'The', add \C if you want 'the' only
 set smartcase " while /The would find only 'The' etc.
