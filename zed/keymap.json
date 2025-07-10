@@ -40,7 +40,7 @@
         }
     },
     {
-      "context": "vim_mode == visual",
+      "context": "vim_mode == visual && !VimCount",
       "bindings": {
         "tab": "editor::Indent",
         "shift-tab": "editor::Outdent",
@@ -49,7 +49,7 @@
       }
     },
     {
-      "context": "vim_mode == normal",
+      "context": "vim_mode == normal && !VimCount",
       "bindings": {
         "0": "vim::FirstNonWhitespace",
         "^": "vim::StartOfLine"
