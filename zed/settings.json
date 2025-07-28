@@ -39,6 +39,16 @@
     },
     "Rainbow CSV": {
       "show_edit_predictions": false
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "Java": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
     }
   },
   "base_keymap": "Atom",
@@ -74,14 +84,15 @@
   "scrollbar": {
     "show": "system"
   },
-  "formatter": {
-    "code_actions": {
-      // Use ESLint's --fix:
-      "source.fixAll.eslint": true,
-      // Organize imports on save:
-      "source.organizeImports": true
-    }
-  },
+  // "formatter": {
+  //   "code_actions": {
+  //     // Use ESLint's --fix:
+  //     "source.fixAll.eslint": true,
+  //     // Organize imports on save:
+  //     "source.organizeImports": true
+  //   }
+  // },
+  "formatter": "language_server",
   "hour_format": "hour24",
   "language_overrides": {
     "JSON": {
@@ -136,7 +147,13 @@
           },
           "forwardSearch": {
             "executable": "/Applications/Skim.app/Contents/SharedSupport/displayline",
-            "args": ["-g", "-r", "%l", "%p", "%f"]
+            "args": [
+              "-g",
+              "-r",
+              "%l",
+              "%p",
+              "%f"
+            ]
             // "executable": "zathura",
             // "args": [
             //     "--synctex-forward",
@@ -152,7 +169,9 @@
   },
   "enable_preview_from_file_finder": true,
   "preferred_line_length": 80,
-  "wrap_guides": [80],
+  "wrap_guides": [
+    80
+  ],
   "show_whitespaces": "selection",
   "soft_wrap": "bounded",
   "env": {},
