@@ -1,151 +1,232 @@
 [
-    {
-        "bindings": {
-            "cmd-enter": "workspace::ToggleZoom",
-            "cmd-shift-o": "workspace::AddFolderToProject",
-            "ctrl-1": "project_panel::ToggleFocus",
-            "ctrl-2": "git_panel::ToggleFocus",
-            "ctrl-3": "outline_panel::ToggleFocus",
-            "cmd-alt-\\": "workspace::ToggleRightDock",
-            "ctrl-a": "agent::ToggleFocus"
-        }
-    },
-    {
-        "context": "Editor",
-        "use_key_equivalents": true,
-        "bindings": {
-            "cmd-shift-v": "markdown::OpenPreviewToTheSide",
-            "cmd-alt-v": "markdown::OpenPreview",
-            "cmd-k k": ["workspace::MoveItemToPaneInDirection", {"direction": "up"}],
-            "cmd-k j": ["workspace::MoveItemToPaneInDirection", {"direction": "down"}],
-            "cmd-k h": ["workspace::MoveItemToPaneInDirection", {"direction": "left"}],
-            "cmd-k l": ["workspace::MoveItemToPaneInDirection", {"direction": "right"}],
-            "cmd-alt- left": "pane::GoBack",
-            "cmd-alt- right": "pane::GoForward",
-            "cmd-shift-d": ["editor::SelectPrevious", { "replace_newest": true }],
-            "cmd-alt--": "editor::FoldAll",
-            "cmd-alt-=": "editor::UnfoldAll",
-            "alt--": "editor::FoldRecursive",
-            "alt-=": "editor::UnfoldLines",
-            "tab": "editor::Indent",
-            "shift-tab": "editor::Outdent",
-            // coding refactoring
-            "shift-f6": "editor::Rename",
-            "f2": "editor::GoToDiagnostic",
-            "shift-f2": "editor::GoToPreviousDiagnostic",
-            "cmd-alt-left": "pane::GoBack",
-            "cmd-alt-right": "pane::GoForward",
-            "cmd-b": "editor::GoToDefinition",
-            "cmd-shift-b": "editor::GoToImplementation"
-        }
-    },
-    {
-      "context": "vim_mode == visual && !VimCount",
-      "bindings": {
-        "tab": "editor::Indent",
-        "shift-tab": "editor::Outdent",
-        "0": "vim::FirstNonWhitespace",
-        "^": "vim::StartOfLine"
-      }
-    },
-    {
-      "context": "vim_mode == normal && !VimCount",
-      "bindings": {
-        "0": "vim::FirstNonWhitespace",
-        "^": "vim::StartOfLine"
-      }
-    },
-    {
-        "context": "BufferSearchBar && !in_replace > Editor",
-        "bindings": {
-            "enter": "vim::SelectNext"
-        }
-    },
-    {
-        "context": "ProjectPanel",
-        "bindings": {
-            "enter": "project_panel::Rename"
-        }
-    },
-    {
-        "context": "ProjectSearchBar",
-        "bindings": {
-            "escape": "project_search::ToggleFocus",
-            "cmd-shift-j": "project_search::ToggleFilters",
-            "cmd-shift-f": "search::FocusSearch",
-            "cmd-shift-r": "search::ToggleReplace",
-            "cmd-r": "search::ToggleReplace",
-            "alt-cmd-g": "search::ToggleRegex",
-            "alt-cmd-x": "search::ToggleRegex",
-            "cmd-shift-h": null
-        }
-    },
-    {
-        "context": "ProjectSearchView",
-        "bindings": {
-            "cmd-shift-h": null
-        }
-    },
-    {
-        "context": "BufferSearchBar",
-        "bindings": {
-            "cmd-r": "search::ToggleReplace",
-            "cmd-alt-f": "project_search::ToggleFilters",
-            "cmd-shift-s": "search::SelectAllMatches"
-        }
-    },
-    {
-        "context": "Pane",
-        "bindings": {
-            "cmd-shift-g": "search::SelectPreviousMatch",
-            "cmd-alt-s": "search::ToggleSelection",
-            "cmd-shift-s": "search::SelectAllMatches",
-            "alt-cmd-c": "search::ToggleCaseSensitive",
-            "alt-cmd-w": "search::ToggleWholeWord",
-            "alt-cmd-f": "project_search::ToggleFilters",
-            "alt-cmd-x": "search::ToggleRegex",
-            "cmd-1": ["pane::ActivateItem", 0],
-            "cmd-2": ["pane::ActivateItem", 1],
-            "cmd-3": ["pane::ActivateItem", 2],
-            "cmd-4": ["pane::ActivateItem", 3],
-            "cmd-5": ["pane::ActivateItem", 4],
-            "cmd-6": ["pane::ActivateItem", 5],
-            "cmd-7": ["pane::ActivateItem", 6],
-            "cmd-8": ["pane::ActivateItem", 7],
-            "cmd-9": ["pane::ActivateItem", 8],
-            "cmd-0": "pane::ActivateLastItem",
-            "ctrl-1": null,
-            "ctrl-2": null,
-            "ctrl-3": null,
-            "ctrl-4": null,
-            "ctrl-5": null,
-            "ctrl-6": null,
-            "ctrl-7": null,
-            "ctrl-8": null,
-            "ctrl-9": null,
-            "ctrl-0": null,
-            "cmd-shift-h": null
-        }
-    },
-    {
-        "context": "NotificationPanel",
-        "bindings": {
-            "cmd-alt-\\": "agent::ToggleFocus"
-        }
-    },
-    {
-        "context": "Workspace",
-        "bindings": {
-            "cmd-shift-h": null,
-            "ctrl-tab": "pane::ActivateNextItem",
-            "ctrl-shift-tab": "pane::ActivatePreviousItem",
-            "cmd-b": null
-        }
-    },
-    {
-        "context": "Terminal",
-        "bindings": {
-            "cmd-t": "workspace::NewTerminal"
-        }
+  {
+    "bindings": {
+      "cmd-enter": "workspace::ToggleZoom",
+      "cmd-shift-o": "workspace::AddFolderToProject",
+      "ctrl-1": "project_panel::ToggleFocus",
+      "ctrl-2": "git_panel::ToggleFocus",
+      "ctrl-3": "outline_panel::ToggleFocus",
+      "cmd-alt-\\": "workspace::ToggleRightDock",
+      "ctrl-a": "agent::ToggleFocus"
     }
+  },
+  {
+    "context": "Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-shift-v": "markdown::OpenPreviewToTheSide",
+      "cmd-alt-v": "markdown::OpenPreview",
+      "cmd-k k": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "up"
+        }
+      ],
+      "cmd-k j": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "down"
+        }
+      ],
+      "cmd-k h": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "left"
+        }
+      ],
+      "cmd-k l": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "right"
+        }
+      ],
+      "cmd-alt- left": "pane::GoBack",
+      "cmd-alt- right": "pane::GoForward",
+      "cmd-shift-d": [
+        "editor::SelectPrevious",
+        {
+          "replace_newest": true
+        }
+      ],
+      "cmd-alt--": "editor::FoldAll",
+      "cmd-alt-=": "editor::UnfoldAll",
+      "alt--": "editor::FoldRecursive",
+      "alt-=": "editor::UnfoldLines",
+      "tab": "editor::Indent",
+      "shift-tab": "editor::Outdent",
+      // coding refactoring
+      "shift-f6": "editor::Rename",
+      "f2": "editor::GoToDiagnostic",
+      "shift-f2": "editor::GoToPreviousDiagnostic",
+      "cmd-alt-left": "pane::GoBack",
+      "cmd-alt-right": "pane::GoForward",
+      "cmd-b": "editor::GoToDefinition",
+      "cmd-shift-b": "editor::GoToImplementation"
+    }
+  },
+  {
+    "context": "vim_mode == visual && !VimCount",
+    "bindings": {
+      "tab": "editor::Indent",
+      "shift-tab": "editor::Outdent",
+      "0": "vim::FirstNonWhitespace",
+      "^": "vim::StartOfLine"
+    }
+  },
+  {
+    "context": "vim_mode == normal && !VimCount",
+    "bindings": {
+      "0": "vim::FirstNonWhitespace",
+      "^": "vim::StartOfLine"
+    }
+  },
+  {
+    "context": "VimControl && !menu && extension == tex",
+    "bindings": {
+      "j": [
+        "vim::Down",
+        {
+          "display_lines": true
+        }
+      ],
+      "k": [
+        "vim::Up",
+        {
+          "display_lines": true
+        }
+      ],
+      "g j": [
+        "vim::Down",
+        {
+          "display_lines": false
+        }
+      ],
+      "g k": [
+        "vim::Up",
+        {
+          "display_lines": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "BufferSearchBar && !in_replace > Editor",
+    "bindings": {
+      "enter": "vim::SelectNext"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": "project_panel::Rename"
+    }
+  },
+  {
+    "context": "ProjectSearchBar",
+    "bindings": {
+      "escape": "project_search::ToggleFocus",
+      "cmd-shift-j": "project_search::ToggleFilters",
+      "cmd-shift-f": "search::FocusSearch",
+      "cmd-shift-r": "search::ToggleReplace",
+      "cmd-r": "search::ToggleReplace",
+      "alt-cmd-g": "search::ToggleRegex",
+      "alt-cmd-x": "search::ToggleRegex",
+      "cmd-shift-h": null
+    }
+  },
+  {
+    "context": "ProjectSearchView",
+    "bindings": {
+      "cmd-shift-h": null
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "cmd-r": "search::ToggleReplace",
+      "cmd-alt-f": "project_search::ToggleFilters",
+      "cmd-shift-s": "search::SelectAllMatches"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-shift-g": "search::SelectPreviousMatch",
+      "cmd-alt-s": "search::ToggleSelection",
+      "cmd-shift-s": "search::SelectAllMatches",
+      "alt-cmd-c": "search::ToggleCaseSensitive",
+      "alt-cmd-w": "search::ToggleWholeWord",
+      "alt-cmd-f": "project_search::ToggleFilters",
+      "alt-cmd-x": "search::ToggleRegex",
+      "cmd-1": [
+        "pane::ActivateItem",
+        0
+      ],
+      "cmd-2": [
+        "pane::ActivateItem",
+        1
+      ],
+      "cmd-3": [
+        "pane::ActivateItem",
+        2
+      ],
+      "cmd-4": [
+        "pane::ActivateItem",
+        3
+      ],
+      "cmd-5": [
+        "pane::ActivateItem",
+        4
+      ],
+      "cmd-6": [
+        "pane::ActivateItem",
+        5
+      ],
+      "cmd-7": [
+        "pane::ActivateItem",
+        6
+      ],
+      "cmd-8": [
+        "pane::ActivateItem",
+        7
+      ],
+      "cmd-9": [
+        "pane::ActivateItem",
+        8
+      ],
+      "cmd-0": "pane::ActivateLastItem",
+      "ctrl-1": null,
+      "ctrl-2": null,
+      "ctrl-3": null,
+      "ctrl-4": null,
+      "ctrl-5": null,
+      "ctrl-6": null,
+      "ctrl-7": null,
+      "ctrl-8": null,
+      "ctrl-9": null,
+      "ctrl-0": null,
+      "cmd-shift-h": null
+    }
+  },
+  {
+    "context": "NotificationPanel",
+    "bindings": {
+      "cmd-alt-\\": "agent::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-h": null,
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "cmd-b": null
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-t": "workspace::NewTerminal"
+    }
+  }
 ]
