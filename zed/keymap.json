@@ -65,6 +65,13 @@
     }
   },
   {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "n": "search::SelectNextMatch",
+      "shift-n": "search::SelectPreviousMatch"
+    }
+  },
+  {
     "context": "vim_mode == visual && !VimCount",
     "bindings": {
       "tab": "editor::Indent",
