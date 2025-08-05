@@ -22,6 +22,7 @@ if [ "$1" == "all" ]; then
   bash ./deploy_gtest.sh
   # bash ./deploy_drone_cli.sh
   bash ./deploy_pip_app.sh
+  bash ./deploy_npm_app.sh
   bash ./link_all.sh
   bash ./deploy_app_store_apps.sh &
   bash ./deploy_homebrew_cask_apps.sh &
