@@ -7,6 +7,32 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "context_servers": {
+    "mcp-server-mui": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "preferred_theme": "",
+        "component_filter": [
+          ""
+        ]
+      }
+    },
+    "mcp-server-github": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "github_personal_access_token": "GITHUB_PERSONAL_ACCESS_TOKEN"
+      }
+    },
+    "postgres-context-server": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "database_url": "postgresql://postgres:root@localhost:5432/board"
+      }
+    }
+  },
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
@@ -19,7 +45,7 @@
   "theme": "Material Dark",
   "icon_theme": "Material Icon Theme",
   "agent": {
-    "default_profile": "ask",
+    "default_profile": "write",
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
