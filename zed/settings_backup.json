@@ -7,15 +7,57 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "context_servers": {
+    "mcp-server-mui": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "preferred_theme": "",
+        "component_filter": [
+          ""
+        ]
+      }
+    },
+    "mcp-server-github": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "github_personal_access_token": "GITHUB_PERSONAL_ACCESS_TOKEN"
+      }
+    },
+    "postgres-context-server": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "database_url": "postgresql://postgres:root@localhost:5432/board"
+      }
+    },
+    "mcp-miro": {
+      "command": "mcp-miro",
+      "args": [
+        "--token",
+        "eyJtaXJvLm9yaWdpbiI6ImV1MDEifQ__g0vVJ9GiJNZomXJUCIZcBXCjFQ"
+      ]
+    }
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
   "theme": "Material Dark",
   "icon_theme": "Material Icon Theme",
   "agent": {
+    "default_profile": "write",
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4-thinking"
+      "model": "claude-opus-4-thinking"
     },
-    "version": "2"
   },
   "languages": {
     "JSONC": {
@@ -30,6 +72,16 @@
     },
     "Rainbow CSV": {
       "show_edit_predictions": false
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "Java": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
     }
   },
   "base_keymap": "Atom",
@@ -65,14 +117,15 @@
   "scrollbar": {
     "show": "system"
   },
-  "formatter": {
-    "code_actions": {
-      // Use ESLint's --fix:
-      "source.fixAll.eslint": true,
-      // Organize imports on save:
-      "source.organizeImports": true
-    }
-  },
+  // "formatter": {
+  //   "code_actions": {
+  //     // Use ESLint's --fix:
+  //     "source.fixAll.eslint": true,
+  //     // Organize imports on save:
+  //     "source.organizeImports": true
+  //   }
+  // },
+  "formatter": "language_server",
   "hour_format": "hour24",
   "language_overrides": {
     "JSON": {
@@ -127,7 +180,13 @@
           },
           "forwardSearch": {
             "executable": "/Applications/Skim.app/Contents/SharedSupport/displayline",
-            "args": ["-g", "-r", "%l", "%p", "%f"]
+            "args": [
+              "-g",
+              "-r",
+              "%l",
+              "%p",
+              "%f"
+            ]
             // "executable": "zathura",
             // "args": [
             //     "--synctex-forward",
@@ -143,7 +202,9 @@
   },
   "enable_preview_from_file_finder": true,
   "preferred_line_length": 80,
-  "wrap_guides": [80],
+  "wrap_guides": [
+    80
+  ],
   "show_whitespaces": "selection",
   "soft_wrap": "bounded",
   "env": {},

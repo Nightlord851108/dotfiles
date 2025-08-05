@@ -31,6 +31,14 @@
       "settings": {
         "database_url": "postgresql://postgres:root@localhost:5432/board"
       }
+    },
+    "mcp-miro": {
+      "source": "custom",
+      "command": "mcp-miro",
+      "args": [
+        "--token",
+        "eyJtaXJvLm9yaWdpbiI6ImV1MDEifQ__g0vVJ9GiJNZomXJUCIZcBXCjFQ"
+      ]
     }
   },
   "edit_predictions": {
@@ -45,6 +53,7 @@
   "theme": "Material Dark",
   "icon_theme": "Material Icon Theme",
   "agent": {
+    "single_file_review": false,
     "default_profile": "write",
     "always_allow_tool_actions": true,
     "default_model": {
