@@ -33,11 +33,19 @@
       }
     },
     "mcp-miro": {
+      "enabled": false,
       "source": "custom",
       "command": "mcp-miro",
       "args": [
         "--token",
         "eyJtaXJvLm9yaWdpbiI6ImV1MDEifQ__g0vVJ9GiJNZomXJUCIZcBXCjFQ"
+      ]
+    },
+    "mcp-ezddd": {
+      "source": "custom",
+      "command": "node",
+      "args": [
+        "/Users/patrick/Github/ezkanban/ezddd/ezddd-mcp/dist/index.js"
       ]
     }
   },
@@ -50,7 +58,7 @@
     },
     "enabled_in_text_threads": false
   },
-  "theme": "Material Dark",
+  "theme": "Moonlight",
   "icon_theme": "Material Icon Theme",
   "agent": {
     "single_file_review": false,
@@ -70,7 +78,8 @@
       "show_edit_predictions": false
     },
     "Markdown": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
+      "tab_size": 2
     },
     "Rainbow CSV": {
       "show_edit_predictions": false
