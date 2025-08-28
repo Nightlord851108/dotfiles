@@ -64,6 +64,7 @@ When I tell you to commit:
 3. Consistency:
     - Do not mix unrelated changes in a single commit.
     - Always ensure that the commit message reflects the exact scope of the modification.
+    - The commit message should be in English
 4. Author:
     - 只使用以下指令取得的 user name 以及 email 作為 author:
         ```bash
