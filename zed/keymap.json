@@ -90,28 +90,28 @@
   {
     "context": "VimControl && !menu && extension == tex",
     "bindings": {
-      "j": [
+      "down": [
         "vim::Down",
         {
           "display_lines": true
         }
       ],
-      "k": [
+      "up": [
         "vim::Up",
         {
           "display_lines": true
         }
       ],
-      "g j": [
-        "vim::Down",
+      "cmd-left": [
+        "vim::StartOfLine",
         {
-          "display_lines": false
+          "display_lines": true
         }
       ],
-      "g k": [
-        "vim::Up",
+      "cmd-right": [
+        "vim::EndOfLine",
         {
-          "display_lines": false
+          "display_lines": true
         }
       ]
     }
