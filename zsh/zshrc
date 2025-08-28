@@ -182,6 +182,7 @@ alias chrome-dev='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 alias intellij='open -a IntelliJ\ IDEA.app'
 alias vscode=code
 alias zed=zed-preview
+# alias zed=zed
 # }}}
 # node {{{
 alias legacy_node='export NODE_OPTIONS=--openssl-legacy-provider'
@@ -242,10 +243,6 @@ sml
 alias game_fps_on="/bin/launchctl setenv MTL_HUD_ENABLED 1"
 alias game_fps_off="/bin/launchctl setenv MTL_HUD_ENABLED 0"
 # }}}
-export LDAP_DC=dc=ssl-drone,dc=csie,dc=ntut,dc=edu,dc=tw
-export LDAP_URL=ldap://140.124.181.94:389
-export LDAP_ADMIN_USER=admin
-export LDAP_ADMIN_PASSWORD=admin
 
 export OPEN_JML_HOME=~/openjml
 export PATH=$OPEN_JML_HOME:$PATH
