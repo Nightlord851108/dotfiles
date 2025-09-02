@@ -21,7 +21,7 @@
   - ${PROJECT_NAME}: claude 正在運行中的根目錄名稱。例如： "ezKanban" 是claude 正在執行中的專案目錄。
   - ${SUBJECT_NAME}: claude 正在討論中的主題。例如："CreateCardUseCase 實作" 是 claude 在 ezkanban 中要執行的一群任務的共同主題。
   - ${SUMMARY_TITLE}: claude 在這次回答中做的事情。例如，在"CreateCardUseCase 實作" 這個 subject 底下可能有 "實作 use case teset 測試"、"實作 use case 以通過測試"、"Refactor 以完成的程式"等工作。
-  - ${CURRENT_TIME}: 使用前一步驟中，透過 `date -U` 取得的時間。
+  - ${CURRENT_TIME}: 使用前一步驟中，透過 `date -u` 取得的時間。
 
 不寫入 memory mcp 的情況：
 - 當我的指令中有包含 `$no_memory` 的文字，這單一指令不要寫入 memory mcp
