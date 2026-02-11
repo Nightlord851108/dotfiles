@@ -13,7 +13,7 @@ export HOMEBREW_AUTO_UPDATE_SECS="86400"
 if [ "$1" == "all" ]; then
   bash ./install_homebrew.sh
   bash ./deploy_zsh.sh
-  bash ./deploy_useful_homebrew_apps.sh
+  bash ./deploy_homebrew_apps.sh
   bash ./deploy_vim.sh
   bash ./link_ideavim.sh
   bash ./deploy_vifm.sh

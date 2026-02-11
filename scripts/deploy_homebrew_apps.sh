@@ -16,6 +16,7 @@ brew_install 'mit-scheme'
 brew_install 'rlwrap'
 brew_install 'ocaml'
 brew_install 'opam'
+brew_install 'squirrel-app'
 brew_install 'openjdk@21'
 link_file '/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk' '/Library/Java/JavaVirtualMachines/jdk-21.jdk'
 
