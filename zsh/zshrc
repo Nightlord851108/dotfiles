@@ -135,7 +135,7 @@ export PATH=$M2:$PATH
 # alias {{{
 # general {{{
 alias ...='cd ../..'
-alias ....='cd ../../../..'
+alias ....='cd ../../..'
 alias md='mkdir'
 alias ll='ls -lh'
 alias lla='ls -a -lh'
