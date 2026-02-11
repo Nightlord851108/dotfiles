@@ -6,26 +6,6 @@
 
 ## MCP 使用
 
-### Memory MCP
-
-所有專案都要自動透過 memory mcp 紀錄討論過的內容。
-每個紀錄的key 都要以 "[${PROJECT_NAME}]" 作為prefix，並以"-${CURRENT_TIME}" 為 postfix。
-
-使用步驟如下：
-
-1. Claude 啟動時先根據 ${PROJECT_NAME} 讀取 memory mcp 中，關於這個專案的討論內容。
-2. 按照時間排序，將過去討論過的內容整理為context，並依據這些內容繼續討論、回答。
-3. Claude 在每次回答之後，整理該次回答的重點。
-4. 使用指令： `date -U` 取得 UTC Format 的系統時間。
-4. 將整理完的重點寫入 Memory mcp 中，key 的格式為 "[${PROJECT_NAME}][${SUBJECT_NAME}]${SUMMARY_TITLE}-${CURRENT_TIME}"
-  - ${PROJECT_NAME}: claude 正在運行中的根目錄名稱。例如： "ezKanban" 是claude 正在執行中的專案目錄。
-  - ${SUBJECT_NAME}: claude 正在討論中的主題。例如："CreateCardUseCase 實作" 是 claude 在 ezkanban 中要執行的一群任務的共同主題。
-  - ${SUMMARY_TITLE}: claude 在這次回答中做的事情。例如，在"CreateCardUseCase 實作" 這個 subject 底下可能有 "實作 use case teset 測試"、"實作 use case 以通過測試"、"Refactor 以完成的程式"等工作。
-  - ${CURRENT_TIME}: 使用前一步驟中，透過 `date -u` 取得的時間。
-
-不寫入 memory mcp 的情況：
-- 當我的指令中有包含 `$no_memory` 的文字，這單一指令不要寫入 memory mcp
-- 如果僅僅只是描述 memory mcp 中的討論內容，而沒有新增的討論內容，不需要寫入 memory mcp
 
 
 ## 開發原則
