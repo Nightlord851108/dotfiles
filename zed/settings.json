@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "minimap": {
+    "show": "never"
+  },
   "context_servers": {
     "mcp-server-mui": {
       "enabled": true,
@@ -170,20 +173,10 @@
               "-synctex=1",
               "-interaction=nonstopmode",
               "-file-line-error",
-              "-pdf",
+              "-xelatex",
               "-outdir=build",
               "%f"
             ]
-            // "executable": "tectonic",
-            // "args": [
-            //     "-X",
-            //     "compile",
-            //     "%f",
-            //     "--untrusted",
-            //     "--synctex",
-            //     "--keep-logs",
-            //     "--keep-intermediates"
-            // ]
           },
           "forwardSearch": {
             "executable": "/Applications/Skim.app/Contents/SharedSupport/displayline",
@@ -194,14 +187,6 @@
               "%p",
               "%f"
             ]
-            // "executable": "zathura",
-            // "args": [
-            //     "--synctex-forward",
-            //     "%l:1:%f",
-            //     "-x",
-            //     "zed %%{input}:%%{line}",
-            //     "%p"
-            // ]
           }
         }
       }
@@ -226,7 +211,8 @@
     80
   ],
   "show_whitespaces": "selection",
-  "soft_wrap": "bounded",
+  "soft_wrap": "editor_width",
+  "env": {},
   // "relative_line_numbers": true,
   "project_panel": {
     "auto_fold_dirs": true,

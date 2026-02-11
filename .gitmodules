@@ -1,0 +1,6 @@
+[submodule "rime/my-rime-bopomofo"]
+	path = rime/my-rime-bopomofo
+	url = git@github.com:Nightlord851108/rime-bopomofo.git
+[submodule "rime/my-rime-terra-pinyin"]
+	path = rime/my-rime-terra-pinyin
+	url = git@github.com:Nightlord851108/rime-terra-pinyin.git

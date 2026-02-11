@@ -123,6 +123,7 @@ export LSCOLORS='exfxcxdxGxegedabagacad'
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.0.1.jdk/Contents/Home
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
 # Maven {{{
 export M2_HOME=/usr/local/apache-maven-3.9.9
 export M2=$M2_HOME/bin
@@ -134,7 +135,7 @@ export PATH=$M2:$PATH
 # alias {{{
 # general {{{
 alias ...='cd ../..'
-alias ....='cd ../../../..'
+alias ....='cd ../../..'
 alias md='mkdir'
 alias ll='ls -lh'
 alias lla='ls -a -lh'
@@ -245,3 +246,4 @@ alias game_fps_off="/bin/launchctl setenv MTL_HUD_ENABLED 0"
 
 export OPEN_JML_HOME=~/openjml
 export PATH=$OPEN_JML_HOME:$PATH
+export PATH="$HOME/.local/bin:$PATH"
