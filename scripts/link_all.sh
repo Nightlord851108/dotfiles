@@ -11,3 +11,4 @@ link_dir $HOME'/Documents/Zed_LLM/threads' $HOME'/Library/Application Support/Ze
 
 ./link_ideavim.sh
 ./link_claude.md.sh
+./link_rime.sh
