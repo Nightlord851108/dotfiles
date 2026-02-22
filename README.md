@@ -4,7 +4,7 @@ My configuration files
 
 ## Environment
 
-macOS Mojave
+MacOS Tahoe
 
 ## Usage
 
@@ -47,3 +47,33 @@ $ ./deploy.sh atom_pkg
 ### Vim/Zsh/Tmux only
 
 If you just want to install vim, zsh, or tmux specifically, you can check out README files in the corresponding directory.
+
+### Git Submodules
+
+#### Get the content of submodules
+
+1. Pull this repo:
+
+    ```bash
+    $ git pull
+    ```
+
+2. Update submodule:
+
+    ```bash
+    $ git submodule update --init --recursive
+    ```
+
+#### Commit the content of submodules
+
+```bash
+$ cd ${Sub_Module}   # cd in to the submodule directory
+$ git checkout master    # For a newly cloned project, we need to checkout the master branch before commit
+$ git add ${Changed_files}
+$ git commit
+$ git push origin master
+$ cd ..    # cd back to the main module
+$ git add ${Sub_Module}    # Update the commit pointer to the submodule in the main module git
+$ git commit
+$ git push
+```
