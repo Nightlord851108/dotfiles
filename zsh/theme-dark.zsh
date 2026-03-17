@@ -14,14 +14,15 @@ PROMPT_COLOR_VENV=87
 # dir colors {{{
 export CLICOLOR='true'
 export LSCOLORS='exfxcxdxGxegedabagacad'
+alias ls='gls --color=auto'
+export LS_COLORS='di=01;38;5;75:ln=01;35:ex=01;36'
 # }}}
 
 # completion format {{{
 zstyle ':completion:*:descriptions' format '%F{226}Completing %F{214}%d%f'
 # }}}
 
-# LS_COLORS {{{
-export LS_COLORS='di=00;99:ln=01;35:ex=01;36'
+# LS_COLORS for completion {{{
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # }}}
 

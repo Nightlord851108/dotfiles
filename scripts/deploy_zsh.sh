@@ -9,6 +9,8 @@ print 'Homebrew Tap universal-ctags/universal-ctags'
 run_cmd 'brew tap universal-ctags/universal-ctags'
 brew_install ' universal-ctags'
 
+brew_install 'coreutils'
+
 brew_install 'zsh'
 brew_install 'diff-so-fancy'
 brew_install 'neofetch'

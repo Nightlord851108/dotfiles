@@ -14,6 +14,7 @@ PROMPT_COLOR_VENV=028       # dark green for virtualenv
 # dir colors {{{
 export CLICOLOR='true'
 export LSCOLORS='ExGxcxdxCxegedabagacad'
+alias ls='gls --color=auto'
 # }}}
 
 # completion format {{{
@@ -21,7 +22,7 @@ zstyle ':completion:*:descriptions' format '%F{130}Completing %F{94}%d%f'
 # }}}
 
 # LS_COLORS {{{
-export LS_COLORS='di=01;34:ln=01;35:ex=01;32'
+export LS_COLORS='di=01;38;5;31:ln=01;35:ex=01;38;5;28'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # }}}
 
