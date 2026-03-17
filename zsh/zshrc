@@ -124,6 +124,14 @@ else
   source "$DOTFILES_DIR/zsh/theme-dark.zsh"
 fi
 
+# override gs-prompt to use theme-aware time color {{{
+prompt_gs_setup_prompt() {
+  PROMPT="%B%F{$PROMPT_COLOR_TIME}%T%f%b"
+  PROMPT+="$prompt_mode%(?.%F{$PROMPT_COLOR_SYMBOL}.%F{$PROMPT_COLOR_SYMBOL_E})${GS_PROMPT_SYMBOL:-❯}%f "
+}
+prompt_gs_setup_prompt
+# }}}
+
 _dotfiles_apply_theme() {
   local new_theme=$1
   [[ "$new_theme" == "$DOTFILES_THEME" ]] && return
@@ -133,6 +141,7 @@ _dotfiles_apply_theme() {
   else
     source "$DOTFILES_DIR/zsh/theme-dark.zsh"
   fi
+  prompt_gs_setup_prompt
   local claude_config="$HOME/.claude.json"
   if [[ -f "$claude_config" ]] && command -v jq &>/dev/null; then
     jq --arg t "$DOTFILES_THEME" '.theme = $t' "$claude_config" > "${claude_config}.tmp" && mv "${claude_config}.tmp" "$claude_config"
