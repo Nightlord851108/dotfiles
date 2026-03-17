@@ -25,12 +25,19 @@ export LS_COLORS='di=00;99:ln=01;35:ex=01;36'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # }}}
 
-# git diff colors — restore defaults {{{
-git config --global color.diff.meta "yellow bold"
-git config --global color.diff.frag "magenta bold"
-git config --global color.diff.commit "yellow bold"
-git config --global color.decorate.HEAD "cyan bold"
-git config --global color.decorate.branch "green bold"
+
+# git colors (via env vars to avoid .gitconfig lock conflicts) {{{
+export GIT_CONFIG_COUNT=5
+export GIT_CONFIG_KEY_0="color.diff.meta"
+export GIT_CONFIG_VALUE_0="yellow bold"
+export GIT_CONFIG_KEY_1="color.diff.frag"
+export GIT_CONFIG_VALUE_1="magenta bold"
+export GIT_CONFIG_KEY_2="color.diff.commit"
+export GIT_CONFIG_VALUE_2="yellow bold"
+export GIT_CONFIG_KEY_3="color.decorate.HEAD"
+export GIT_CONFIG_VALUE_3="cyan bold"
+export GIT_CONFIG_KEY_4="color.decorate.branch"
+export GIT_CONFIG_VALUE_4="green bold"
 # }}}
 
 # glog {{{

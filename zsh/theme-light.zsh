@@ -25,12 +25,19 @@ export LS_COLORS='di=01;34:ln=01;35:ex=01;32'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # }}}
 
-# git diff colors {{{
-git config --global color.diff.meta "172 bold"
-git config --global color.diff.frag "magenta bold"
-git config --global color.diff.commit "172 bold"
-git config --global color.decorate.HEAD "blue bold"
-git config --global color.decorate.branch "28 bold"
+
+# git colors (via env vars to avoid .gitconfig lock conflicts) {{{
+export GIT_CONFIG_COUNT=5
+export GIT_CONFIG_KEY_0="color.diff.meta"
+export GIT_CONFIG_VALUE_0="172 bold"
+export GIT_CONFIG_KEY_1="color.diff.frag"
+export GIT_CONFIG_VALUE_1="magenta bold"
+export GIT_CONFIG_KEY_2="color.diff.commit"
+export GIT_CONFIG_VALUE_2="172 bold"
+export GIT_CONFIG_KEY_3="color.decorate.HEAD"
+export GIT_CONFIG_VALUE_3="blue bold"
+export GIT_CONFIG_KEY_4="color.decorate.branch"
+export GIT_CONFIG_VALUE_4="28 bold"
 # }}}
 
 # glog {{{
