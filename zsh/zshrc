@@ -112,7 +112,17 @@ eval "$(pyenv init -)"
 # }}}
 # theme {{{
 DOTFILES_DIR="$HOME/Github/dotfiles"
-DOTFILES_THEME=$(cat "$HOME/.dotfiles_theme" 2>/dev/null || echo "dark")
+DOTFILES_THEME_OVERRIDE=$(cat "$HOME/.dotfiles_theme" 2>/dev/null || echo "auto")
+if [[ "$DOTFILES_THEME_OVERRIDE" == "auto" ]]; then
+  if defaults read -g AppleInterfaceStyle &>/dev/null; then
+    DOTFILES_THEME="dark"
+  else
+    DOTFILES_THEME="light"
+  fi
+else
+  DOTFILES_THEME="$DOTFILES_THEME_OVERRIDE"
+fi
+
 if [[ "$DOTFILES_THEME" == "light" ]]; then
   source "$DOTFILES_DIR/zsh/theme-light.zsh"
 else
@@ -126,6 +136,31 @@ toggle_theme() {
     echo "light" > "$HOME/.dotfiles_theme"
   fi
   sz
+}
+
+_dotfiles_apply_theme() {
+  local new_theme=$1
+  [[ "$new_theme" == "$DOTFILES_THEME" ]] && return
+  DOTFILES_THEME="$new_theme"
+  if [[ "$DOTFILES_THEME" == "light" ]]; then
+    source "$DOTFILES_DIR/zsh/theme-light.zsh"
+  else
+    source "$DOTFILES_DIR/zsh/theme-dark.zsh"
+  fi
+}
+
+TMOUT=1
+TRAPALRM() {
+  if [[ "$DOTFILES_THEME_OVERRIDE" == "auto" ]]; then
+    local sys_theme
+    if defaults read -g AppleInterfaceStyle &>/dev/null; then
+      sys_theme="dark"
+    else
+      sys_theme="light"
+    fi
+    _dotfiles_apply_theme "$sys_theme"
+  fi
+  zle reset-prompt
 }
 # }}}
 # JAVA {{{
