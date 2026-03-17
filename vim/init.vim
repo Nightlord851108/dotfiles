@@ -255,11 +255,36 @@ call plug#end()
 " }}}
 " plugins' settings {{{
 " Limelight {{{
-let s:theme_file = expand('~/.dotfiles_theme')
-let s:theme = 'dark'
-if filereadable(s:theme_file)
-  let s:theme = trim(readfile(s:theme_file)[0])
-endif
+function! DetectSystemTheme()
+  if system('defaults read -g AppleInterfaceStyle 2>/dev/null') =~# 'Dark'
+    return 'dark'
+  else
+    return 'light'
+  endif
+endfunction
+
+let s:theme = DetectSystemTheme()
+
+function! SyncTheme(timer)
+  let l:new_theme = DetectSystemTheme()
+  if l:new_theme !=# s:theme
+    let s:theme = l:new_theme
+    if s:theme ==# 'light'
+      set background=light
+      silent! colorscheme pikacode-light
+      let g:lightline.colorscheme = 'pikacode_light'
+    else
+      set background=dark
+      silent! colorscheme pikacode
+      let g:lightline.colorscheme = 'pikacode'
+    endif
+    call lightline#init()
+    call lightline#colorscheme()
+    call lightline#update()
+  endif
+endfunction
+
+call timer_start(1000, 'SyncTheme', {'repeat': -1})
 
 if s:theme ==# 'light'
   let g:limelight_conceal_ctermfg = 'gray'
