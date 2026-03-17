@@ -133,6 +133,10 @@ _dotfiles_apply_theme() {
   else
     source "$DOTFILES_DIR/zsh/theme-dark.zsh"
   fi
+  local claude_config="$HOME/.claude.json"
+  if [[ -f "$claude_config" ]] && command -v jq &>/dev/null; then
+    jq --arg t "$DOTFILES_THEME" '.theme = $t' "$claude_config" > "${claude_config}.tmp" && mv "${claude_config}.tmp" "$claude_config"
+  fi
 }
 
 TMOUT=1
