@@ -28,7 +28,6 @@ set cursorline
 
 set mouse=a
 
-set background=dark
 set shell=$SHELL " shell
 if has('termguicolors')
   set termguicolors " true color support
@@ -256,21 +255,39 @@ call plug#end()
 " }}}
 " plugins' settings {{{
 " Limelight {{{
-" Color name (:help cterm-colors) or ANSI code
-let g:limelight_conceal_ctermfg = 'gray'
-let g:limelight_conceal_ctermfg = 240
+let s:theme_file = expand('~/.dotfiles_theme')
+let s:theme = 'dark'
+if filereadable(s:theme_file)
+  let s:theme = trim(readfile(s:theme_file)[0])
+endif
 
-" Color name (:help gui-colors) or RGB color
-let g:limelight_conceal_guifg = 'DarkGray'
-let g:limelight_conceal_guifg = '#777777'
+if s:theme ==# 'light'
+  let g:limelight_conceal_ctermfg = 'gray'
+  let g:limelight_conceal_ctermfg = 249
+  let g:limelight_conceal_guifg = 'DarkGray'
+  let g:limelight_conceal_guifg = '#b2b2b2'
+else
+  let g:limelight_conceal_ctermfg = 'gray'
+  let g:limelight_conceal_ctermfg = 240
+  let g:limelight_conceal_guifg = 'DarkGray'
+  let g:limelight_conceal_guifg = '#777777'
+endif
 
 nmap <Leader>v <Plug>(Limelight)
 xmap <Leader>v <Plug>(Limelight)
 " }}}
 " pikatheme {{{
-let g:lightline = {
-      \ 'colorscheme': 'pikacode'
-      \ }
+if s:theme ==# 'light'
+  set background=light
+  let g:lightline = {
+        \ 'colorscheme': 'pikacode_light'
+        \ }
+else
+  set background=dark
+  let g:lightline = {
+        \ 'colorscheme': 'pikacode'
+        \ }
+endif
 let g:lightline_pika_patchfont = {
       \ 'leftsep': "\ue0b0",
       \ 'leftsubsep': "\ue0b1",
@@ -280,7 +297,11 @@ let g:lightline_pika_patchfont = {
       \ 'linecolumn': "\ue0a1",
       \ 'readonly': "\ue0a2",
       \ }
-silent! colorscheme pikacode
+if s:theme ==# 'light'
+  silent! colorscheme pikacode-light
+else
+  silent! colorscheme pikacode
+endif
 " }}}
 " nerdtree {{{
 " open new vertical split window: s

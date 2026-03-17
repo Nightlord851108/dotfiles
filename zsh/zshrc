@@ -110,10 +110,23 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 eval "$(pyenv init -)"
 # }}}
-# dir colors {{{
-# color
-export CLICOLOR='true'
-export LSCOLORS='exfxcxdxGxegedabagacad'
+# theme {{{
+DOTFILES_DIR="$HOME/Github/dotfiles"
+DOTFILES_THEME=$(cat "$HOME/.dotfiles_theme" 2>/dev/null || echo "dark")
+if [[ "$DOTFILES_THEME" == "light" ]]; then
+  source "$DOTFILES_DIR/zsh/theme-light.zsh"
+else
+  source "$DOTFILES_DIR/zsh/theme-dark.zsh"
+fi
+
+toggle_theme() {
+  if [[ "$DOTFILES_THEME" == "light" ]]; then
+    echo "dark" > "$HOME/.dotfiles_theme"
+  else
+    echo "light" > "$HOME/.dotfiles_theme"
+  fi
+  sz
+}
 # }}}
 # JAVA {{{
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
@@ -136,6 +149,8 @@ export PATH=$M2:$PATH
 # general {{{
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias light_mode='echo "light" > ~/.dotfiles_theme && sz'
+alias dark_mode='echo "dark" > ~/.dotfiles_theme && sz'
 alias md='mkdir'
 alias ll='ls -lh'
 alias lla='ls -a -lh'
@@ -172,7 +187,7 @@ alias gcm='git commit -m'
 alias gpom='git push origin master'
 alias gb='git branch'
 alias gc='git checkout'
-alias glog='git log --graph --abbrev-commit --decorate --format=format:"%C(dim white)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n""          %C(white)%s%C(reset) -%C(magenta) %an%C(reset)" --all'
+# glog alias moved to theme files (theme-dark.zsh / theme-light.zsh)
 # }}}
 # ctags {{{
 alias ctags='/usr/local/bin/ctags -R --exclude=.git --exclude=log *'
@@ -195,7 +210,7 @@ zstyle ':completion:*:default' menu yes=long select=2
 
 # Completing Groping
 zstyle ':completion:*:options' description 'yes'
-zstyle ':completion:*:descriptions' format '%F{226}Completing %F{214}%d%f'
+# completion format moved to theme files (theme-dark.zsh / theme-light.zsh)
 zstyle ':completion:*' group-name ''
 
 # Completing misc
@@ -210,30 +225,20 @@ zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p
 
 # Directory
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
-export LS_COLORS='di=00;99:ln=01;35:ex=01;36'
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# LS_COLORS and list-colors moved to theme files (theme-dark.zsh / theme-light.zsh)
 
 # default: --
 zstyle ':completion:*' list-separator '-->'
 zstyle ':completion:*:manuals' separate-sections true
 # }}}
-# override zsh syntax highlighting {{{
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
-
-ZSH_HIGHLIGHT_STYLES[path]=fg=030 # original [ ,underline ]
-ZSH_HIGHLIGHT_STYLES[command]=fg=081,bold
-ZSH_HIGHLIGHT_STYLES[precommand]=fg=075,underline
-ZSH_HIGHLIGHT_STYLES[alias]=fg=081,bold
-ZSH_HIGHLIGHT_STYLES[builtin]=fg=081,bold
-ZSH_HIGHLIGHT_STYLES[globbing]=fg=061,underline
-ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=025
-ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=025
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=031
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=031
-
+# override zsh syntax highlighting — moved to theme files (theme-dark.zsh / theme-light.zsh)
 # }}}
 # Execute commands on start {{{
-neofetch
+if [[ "$DOTFILES_THEME" == "light" ]]; then
+  neofetch --colors 24 8 8 24 8 0 --ascii_colors 28 222 1 1 5 4
+else
+  neofetch
+fi
 # }}}
 #
 # Source OCaml{{{
