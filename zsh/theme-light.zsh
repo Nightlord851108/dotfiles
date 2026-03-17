@@ -7,7 +7,7 @@ PROMPT_COLOR_GIT=130        # dark orange for branch name
 PROMPT_COLOR_GIT_DIRTY=160  # red for dirty marker
 PROMPT_COLOR_GIT_ARROW=088  # dark red for arrows
 PROMPT_COLOR_EXECTIME=166   # orange for exec time
-PROMPT_COLOR_TIME=030       # dark teal for time
+PROMPT_COLOR_TIME=024       # darker teal for time
 PROMPT_COLOR_VENV=028       # dark green for virtualenv
 # }}}
 
