@@ -57,12 +57,14 @@
     },
     "enabled_in_text_threads": false
   },
-  "theme": "Moonlight",
+  "theme": "macOS Classic Light",
   "icon_theme": "Material Icon Theme",
   "agent": {
+    "tool_permissions": {
+      "default": "allow"
+    },
     "single_file_review": false,
     "default_profile": "write",
-    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5"
@@ -252,6 +254,7 @@
     "typos": true,
     "material-dark": true,
     "material-icon-theme": true,
-    "moonlight": true
+    "moonlight": true,
+    "macos-classic": true
   }
 }

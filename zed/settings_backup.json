@@ -7,9 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "minimap": {
+    "show": "never"
+  },
   "context_servers": {
     "mcp-server-mui": {
-      "source": "extension",
       "enabled": true,
       "settings": {
         "preferred_theme": "",
@@ -19,14 +21,12 @@
       }
     },
     "mcp-server-github": {
-      "source": "extension",
       "enabled": true,
       "settings": {
         "github_personal_access_token": "GITHUB_PERSONAL_ACCESS_TOKEN"
       }
     },
     "postgres-context-server": {
-      "source": "extension",
       "enabled": true,
       "settings": {
         "database_url": "postgresql://postgres:root@localhost:5432/board"
@@ -34,7 +34,6 @@
     },
     "mcp-miro": {
       "enabled": false,
-      "source": "custom",
       "command": "mcp-miro",
       "args": [
         "--token",
@@ -113,7 +112,7 @@
   },
   "tab_size": 4,
   "ui_font_size": 22,
-  "agent_font_size": 24,
+  "agent_ui_font_size": 24,
   "buffer_font_family": "LXGW WenKai Mono TC",
   "buffer_font_size": 26,
   "buffer_line_height": {
@@ -174,20 +173,10 @@
               "-synctex=1",
               "-interaction=nonstopmode",
               "-file-line-error",
-              "-pdf",
+              "-xelatex",
               "-outdir=build",
               "%f"
             ]
-            // "executable": "tectonic",
-            // "args": [
-            //     "-X",
-            //     "compile",
-            //     "%f",
-            //     "--untrusted",
-            //     "--synctex",
-            //     "--keep-logs",
-            //     "--keep-intermediates"
-            // ]
           },
           "forwardSearch": {
             "executable": "/Applications/Skim.app/Contents/SharedSupport/displayline",
@@ -198,14 +187,6 @@
               "%p",
               "%f"
             ]
-            // "executable": "zathura",
-            // "args": [
-            //     "--synctex-forward",
-            //     "%l:1:%f",
-            //     "-x",
-            //     "zed %%{input}:%%{line}",
-            //     "%p"
-            // ]
           }
         }
       }
@@ -230,7 +211,8 @@
     80
   ],
   "show_whitespaces": "selection",
-  "soft_wrap": "bounded",
+  "soft_wrap": "editor_width",
+  "env": {},
   // "relative_line_numbers": true,
   "project_panel": {
     "auto_fold_dirs": true,
