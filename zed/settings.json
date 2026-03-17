@@ -57,7 +57,11 @@
     },
     "enabled_in_text_threads": false
   },
-  "theme": "macOS Classic Light",
+  "theme": {
+    "mode": "system",
+    "light": "macOS Classic Light",
+    "dark": "Moonlight"
+  },
   "icon_theme": "Material Icon Theme",
   "agent": {
     "tool_permissions": {
