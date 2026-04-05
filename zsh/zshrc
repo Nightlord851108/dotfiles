@@ -132,6 +132,38 @@ prompt_gs_setup_prompt() {
 prompt_gs_setup_prompt
 # }}}
 
+# override gs-prompt to fix global variable leak (i, step, path) {{{
+prompt_gs_truncate_pwd() {
+	local n
+	n=${GS_TRUNCATE_PWD_NUM:-4}
+	local cur_path
+	cur_path=$(pwd | sed -e "s,^$HOME,~,")
+
+	local dirs
+	dirs=("${(s:/:)cur_path}")
+	local dirs_length
+	dirs_length=$#dirs
+
+	if [[ $dirs_length -ge $n ]]; then
+		local max i step
+		((max=dirs_length - n))
+		for (( i = 1; i <= $max; i++ )); do
+			step="$dirs[$i]"
+			if [[ -z $step ]]; then
+				continue
+			fi
+			if [[ $step =~ "^\." ]]; then
+				dirs[$i]=$step[0,2]
+			else
+				dirs[$i]=$step[0,1]
+			fi
+		done
+	fi
+
+	echo ${(j:/:)dirs}
+}
+# }}}
+
 _dotfiles_apply_theme() {
   local new_theme=$1
   [[ "$new_theme" == "$DOTFILES_THEME" ]] && return
