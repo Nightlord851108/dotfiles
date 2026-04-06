@@ -150,6 +150,11 @@
   // },
   "formatter": "language_server",
   "lsp": {
+    "ltex": {
+      "binary": {
+        "path": "~/.ltex-ls/ltex-ls-16.0.0/bin/ltex-ls"
+      }
+    },
     "typos": {
       "initialization_options": {
         // Path to your typos config file, .typos.toml by default.

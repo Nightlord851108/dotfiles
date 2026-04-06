@@ -3,3 +3,4 @@ plugged
 .undodir
 custom
 vim/black/*
+/lsp
