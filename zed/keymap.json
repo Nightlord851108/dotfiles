@@ -237,5 +237,53 @@
     "bindings": {
       "cmd-t": "workspace::NewTerminal"
     }
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "alt-enter": "editor::Newline"
+    }
+  },
+  {
+    "context": "AgentFeedbackMessageEditor > Editor",
+    "unbind": {
+      "alt-enter": "editor::Newline"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-enter": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-.": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "unbind": {
+      "ctrl-x ctrl-l": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "unbind": {
+      "ctrl-x ctrl-l": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "alt-enter": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "unbind": {
+      "ctrl-x ctrl-l": "editor::ToggleCodeActions"
+    }
   }
 ]

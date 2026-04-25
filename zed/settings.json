@@ -7,6 +7,87 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    },
+    "gemini": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "language_models": {
+    "openai_compatible": {
+      "NVIDIA": {
+        "api_url": "https://integrate.api.nvidia.com/v1",
+        "available_models": [
+          {
+            "name": "minimax/minimax-m2.7",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          },
+          {
+            "name": "deepseek-ai/deepseek-v3.2",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          },
+          {
+            "name": "google/gemma-3n-e4b-it",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          },
+          {
+            "name": "z-ai/glm4.7",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "minimap": {
     "show": "never"
   },
@@ -64,15 +145,17 @@
   },
   "icon_theme": "Material Icon Theme",
   "agent": {
+    "dock": "right",
     "tool_permissions": {
       "default": "allow"
     },
+    "sidebar_side": "right",
     "single_file_review": false,
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5"
-    },
+      "provider": "NVIDIA",
+      "model": "deepseek-ai/deepseek-v3.2"
+    }
   },
   "languages": {
     "JSONC": {
@@ -118,7 +201,7 @@
   },
   "tab_size": 4,
   "ui_font_size": 22,
-  "agent_ui_font_size": 24,
+  "agent_ui_font_size": 22,
   "buffer_font_family": "LXGW WenKai Mono TC",
   "buffer_font_size": 26,
   "buffer_line_height": {
@@ -222,10 +305,11 @@
     80
   ],
   "show_whitespaces": "selection",
-  "soft_wrap": "editor_width",
+  "soft_wrap": "preferred_line_length",
   "env": {},
   // "relative_line_numbers": true,
   "project_panel": {
+    "dock": "left",
     "auto_fold_dirs": true,
     "default_width": 260,
     "indent_size": 30
