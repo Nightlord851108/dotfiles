@@ -189,7 +189,7 @@ TRAPALRM() {
     sys_theme="light"
   fi
   _dotfiles_apply_theme "$sys_theme"
-  zle reset-prompt
+  zle && zle .reset-prompt
 }
 # }}}
 # JAVA {{{
